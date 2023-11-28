@@ -1,0 +1,166 @@
+/* Added grid display to main tag*/
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+}
+
+/* Define grid template to be portrait for screens >= 500px */
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+      "header  header"
+      "content sidebar"
+      "footer  footer";
+  }
+}
+/* Define grid template to be landscape for screens >= 700px */
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+      "header header  header"
+      "content content sidebar"
+      "footer footer  footer";
+  }
+}
+
+/* Main page was divided into 4 grid areas (Ref:https: //developer.mozilla.org/en-US/docs/Glossary/Grid_Areas)*/ 
+.main-head {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.side {
+  grid-area: sidebar;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.footer{
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+
+}
+
+header {
+  border-bottom: 0cap;
+  margin: 2vh;
+}
+
+footer {
+  border-top: 0cap;
+  
+}
+
+aside {
+  display: flex;
+  text-align: justify;
+  font-size: 100%;
+  font-weight: lighter;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+  text-align: center
+
+}
+
+img {
+  
+  align-self: center;
+  height: 150px;
+  border: 3px solid #ddd;
+  border-radius: 40px;
+  padding: 5px;
+  width: 150px;
+  
+}
+
+a {
+  line-height: 5vh;
+}
+
+h1 {
+  text-align: center;
+  color:blanchedalmond;
+  font-family: serif;
+  font-size: 250%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 130%;
+  font-weight: bold;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  font-size: 100%;
+  font-weight: lighter;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+  text-align: justify ;
+}
+
+
+
+body{
+  font-family: cursive;
+  background-image: url("backgroundPic.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main>div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vh 2vw;
+  border-left: 1px solid whitesmoke;
+  border-right: 0cap;
+}
+
+main>div:first-child {
+  border-left: none;
+}
+
+article {
+  border-bottom: 0cap;
+  margin: 2.5vh;
+  width: 30%;
+  height: auto;
+  
+}
+
+article:last-child {
+  border-bottom:none;
+}
+
+article:nth-last-child(2) {
+  border-bottom: none;
+}
