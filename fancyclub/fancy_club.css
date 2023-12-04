@@ -1,8 +1,8 @@
-body {
+#fancy_club.body {
   margin: 0px;
 }
 
-header {
+#fancy_club.header {
   background-color: black;
   height: 75px;
   width: auto;
@@ -12,22 +12,22 @@ header {
 
 }
 
-#main_heading {
+#fancy_club.main_heading {
   margin-top: 0px;
 }
 
-.header_heading {
+#fancy_club.header_heading {
   color: white;
   font-size: 30px;
   margin: 0px;
   padding-left: 50px;
 }
 
-.main_page {
+#fancy_club.main_page {
   display: flex;
 }
 
-.main {
+#fancy_club.main {
   width: 70%;
   padding: 20px;
   display: flex;
@@ -37,7 +37,7 @@ header {
   text-align: center;
 }
 
-.right {
+#fancy_club.right {
   width: 30%;
   background-color: darkgray;
   display: flex;
@@ -47,39 +47,39 @@ header {
 }
 
 
-.club_info {
+#fancy_club.club_info {
   text-align: center;
   width: calc(100% - 20px);
 }
 
 
-h1 {
+#fancy_club.general_info {
   font-size: 24px;
 }
 
-ul {
+#fancy_club.ul {
   list-style-type: none;
   padding-left: 0px;
 }
 
-strong {
+#fancy_club.strong {
   font-weight: bold;
 }
 
-#club_photo {
+#fancy_club.club_photo {
   width: calc(100% - 40px);
   height: auto;
 }
 
-#club_photo_2 {
+#fancy_club.club_photo_2 {
   width: calc(100% - 40px);
 }
 
-#club_information {
+#fancy_club.club_information {
   width: auto
 }
 
-footer {
+#fancy_club.footer {
   height: 50px;
   background-color: black;
   display: flex;
@@ -87,7 +87,7 @@ footer {
   align-items: center;
 }
 
-.downbar_button {
+#fancy_club.downbar_button {
   border: none;
   background: none;
   color: white;
@@ -95,20 +95,20 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .main_page {
+  #fancy_club.main_page {
     flex-direction: column;
   }
 
-  .right {
+  #fancy_club.right {
     width: 100%;
   }
 
-  #club_photo {
+  #fancy_club.club_photo {
     width: calc(100% - 40px);
     height: auto;
   }
 
-  .main {
+  #fancy_club.main {
     width: auto;
   }
 }
