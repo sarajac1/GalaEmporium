@@ -93,6 +93,23 @@ main{
 
 #threeColumns{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.borderimg {
+  flex: 0 0 30%;
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  max-width: 200px;
 }
 
 .borderimg {
@@ -128,3 +145,20 @@ main{
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
+.magic-show img{
+  width: 100%;
+}
+
+.dancestage img{
+  width: 100%;
+}
+
+.vampireclub img {
+  width: 100%;
+}
+
+.fancy-club img {
+  width: 100%;
+}
+
