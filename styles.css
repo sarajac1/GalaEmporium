@@ -1,22 +1,50 @@
+html { 
+  background: url(img/bg.jpg) no-repeat center center fixed; 
+  background-color: #080811;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
+  font-family: 'Dosis';
+  font-size:medium;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
+}
+
+#container{
+  border-style: solid;
+  border-color: #000000;
+}
+
+
+header {
+  text-align: center;
+  background: white;
+  width: 100%;
+  content: url(img/header.jpg);
+  max-width: 900px;
+  object-fit: cover;
   
 }
 
-header{
 
-  max-width: 800px;
+footer{
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom:8px;
+  color: white; 
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size:medium;
   
-  
-}
-
-header>img{
-  max-width: 800px;
-
 }
 
 nav{
@@ -24,11 +52,11 @@ nav{
   padding-top: 8px;
   padding-bottom:8px;
   color: white; 
-  max-width: 800px;
-  width: 800px;
+  max-width: 900px;
+  width: 900px;
   display: flex;
   justify-content: space-evenly; 
-  
+  font-size:medium;
 }
 
 a:link{
@@ -48,35 +76,89 @@ a:hover{
 
 
 main{
-  background-image: url(/images/nightsky.avif);
-  padding-top: 20px;
-  
+  background-color: #A4B2D4;
   color: white; 
-  max-width: 800px;
-  width: 800px;
-
-  
+  max-width: 900px;
+  width: 900px;
 }
 
-.wrapper{
-  padding-left: 10px;
+
+.bordertext {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  width: 600px;
+  margin: auto;
+}
+
+#threeColumns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.borderimg {
+  flex: 0 0 30%;
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.borderimg {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  margin: auto;
+  max-width: 200px;
+
+}
+.borderimg>img{
+  max-width: 200px;
+}
+
+.calendar {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  width: 800px;
+  margin: auto;
   display: flex;
 }
 
+#calendar{
+  flex: 60%;
+  background-color: aliceblue;
+}
 
-.left{
-  flex: 50%; 
+#bookingText{
+  flex: 40%;
   
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-
-
-.right{
-  flex: 50%;
-  padding-right: 30px;
-  
+.magic-show img{
+  width: 100%;
 }
 
-.right>img{
-  width: 400px;
+.dancestage img{
+  width: 100%;
 }
+
+.vampireclub img {
+  width: 100%;
+}
+
+.fancy-club img {
+  width: 100%;
+}
+
