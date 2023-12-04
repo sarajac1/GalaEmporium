@@ -7,63 +7,107 @@
   <link rel="stylesheet" href="magicShow.css">
   <script src="../jquery-3.7.1.js"></script>
   <script src="../router.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" href="../simple-calendar.scss">
+  <script src="../jquery.simple-calendar.js"></script>
+
 </head>
 
 <header>
-  <h1>Great Magic Show Club</h1>
-  <aside class="login" id="login"></aside>
+  <h1>Great Magic Show Club</h1> 
+    <aside class="login" id="login"></aside>
 </header>
 
 <body>
-    <main>    
-    
-      <div>      
-      <p>Welcome to the magical world of the Magician!
-        A comical magic show suitable for both children and adults. In this unique performance, the audience can actively
-        participate and experience the amazing magic trick.
-        Come and experience this magical magic show that guarantees laughter and an unforgettable experience!.</p>
-      
-      <aside class="booking">
-          <h2>Booking</h2>
-      </aside>
+  <div class="flex-row-container">
+    <div class="flex-row-item">
+      <div class="calendar" id="container"></div>
+      <script>
+      $(function () {
+        $("#container").simpleCalendar({
+          
+          displayEvent: true,
+          events: [
+            {
+              startDate: new Date ("2023-12-13"),
+              endDate: new Date("2023-12-13"),
+              summary: 'New event',
 
-        <section>
-        <span>         
-      <img src="Pic1.jpg">
-      <p>Great Magic Show</p>
-      </section>
+            }],
+          disableEventDetails: false,
+
+          })
+         });
    
 
-      <section>     
-      <img src="Pic2.jpg">
-      <p>The Magician</p>
-      </section>
+     
 
-      <section>
-      <img src="Pic3.jpg">
-      <p>Best entertainment for kids</p>
-      </section>
+      </script>
+      </div>
+    
+      <div class="flex-row-item" style="flex-basis: 50%;">
+        <main class="middle">
+          <div class="middlediv">
+            <p>Welcome to the magical world of the Magician!
+              A comical magic show suitable for both children and adults. In this unique performance, the audience can actively
+              participate and experience the amazing magic trick.
+              Come and experience this magical magic show that guarantees laughter and an unforgettable experience!.</p>
+            
+            <div class="imageSection">      
+            <section>
+              <img src="Pic1.jpg">
+              <p>Great Magic Show</p>
+            </section>
+        
+        
+            <section>
+              <img src="Pic2.jpg">
+              <p>The Magician</p>
+            </section>
+        
+            <section>
+              <img src="Pic3.jpg">
+              <p>Best entertainment for kids</p>
+            </section>
+        
+            <section>
+              <img src="Pic4.jpg">
+              <p>Magic inside the Hat </p>
+            </section>
+        
+        
+            <section>
+              <img src="Pic5.jpg">
+              <p>Master of Magicians</p>
+            </section>
+        
+        
+            <section>
+              <img src="Pic6.jpg">
+              <p>Play more with Playing Cards</p>
+            </section>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+
+
+    <div class="flex-row-item" style="flex-basis: 10%;">
       
-      <section>
-      <img src="Pic4.jpg">
-      <p>Magic inside the Hat </p>
-      </section>
-      
-
-      <section>
-      <img src="Pic5.jpg">
-      <p>Master of Magicians</p>
-      </section>
-      
-
-      <section>
-      <img src="Pic6.jpg">
-      <p>Play more with Playing Cards</p>
-    </section>
-
+        <h2>Upcoming Events</h2>
+        <p>The Great Magic Show in Lund on 13-December-2023 at 17:00</p>
+        <p>The Great Magic Show in Malmö-Centralen on 17-December-2023 at 17:00</p>
+        <p>The Great Magic Show in Malmö-Triangeln on 20-December-2023 at 17:00</p>
+        <p>The Great Magic Show in Malmö-Hyllie on 23-December-2023 at 17:00</p>
+        <p>The Great Magic Show in Burlöv Centre on 26-December-2023 at 17:00</p>
+        
     </div>
-  </main>
+    
 
+  </div>
+  
+    
 <footer>
   <p class="footer">Designed & Developed by Group8, Students @ NBI/Handelsakademin, Malmö, Sweden </p>
 </footer>
