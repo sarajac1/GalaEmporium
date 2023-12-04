@@ -1,5 +1,4 @@
-
-body{
+body {
   margin: 0px;
 }
 
@@ -13,6 +12,10 @@ header {
 
 }
 
+#main_heading {
+  margin-top: 0px;
+}
+
 .header_heading {
   color: white;
   font-size: 30px;
@@ -20,16 +23,21 @@ header {
   padding-left: 50px;
 }
 
-.main_page{
+.main_page {
   display: flex;
 }
 
-.main{
+.main {
   width: 70%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
-.right{
+.right {
   width: 30%;
   background-color: darkgray;
   display: flex;
@@ -41,6 +49,7 @@ header {
 
 .club_info {
   text-align: center;
+  width: calc(100% - 20px);
 }
 
 
@@ -57,12 +66,12 @@ strong {
   font-weight: bold;
 }
 
-#club_photo{
-  width: calc(100% - 40px);  
+#club_photo {
+  width: calc(100% - 40px);
   height: auto;
 }
 
-#club_photo_2{
+#club_photo_2 {
   width: calc(100% - 40px);
 }
 
@@ -70,7 +79,7 @@ strong {
   width: auto
 }
 
-footer{
+footer {
   height: 50px;
   background-color: black;
   display: flex;
@@ -94,8 +103,12 @@ footer{
     width: 100%;
   }
 
-  #club_photo{
+  #club_photo {
     width: calc(100% - 40px);
     height: auto;
+  }
+
+  .main {
+    width: auto;
   }
 }
