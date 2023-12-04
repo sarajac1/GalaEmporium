@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="magicShow.css">
   <script src="../jquery-3.7.1.js"></script>
   <script src="../router.js" type="module"></script>
-  <link rel="stylesheet" type="text/css" href="../simple-calendar.scss">
-  <script src="../jquery.simple-calendar.js"></script>
-
 </head>
 
 <header>
@@ -19,31 +16,6 @@
 
 <body>
   <div class="flex-row-container">
-    <div class="flex-row-item">
-      <div class="calendar" id="container"></div>
-      <script>
-      $(function () {
-        $("#container").simpleCalendar({
-          
-          displayEvent: true,
-          events: [
-            {
-              startDate: new Date ("2023-12-13"),
-              endDate: new Date("2023-12-13"),
-              summary: 'New event',
-
-            }],
-          disableEventDetails: false,
-
-          })
-         });
-   
-
-     
-
-      </script>
-      </div>
-    
       <div class="flex-row-item" style="flex-basis: 50%;">
         <main class="middle">
           <div class="middlediv">
