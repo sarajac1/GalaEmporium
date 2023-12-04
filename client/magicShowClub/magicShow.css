@@ -30,15 +30,25 @@
   }
 }
 
-.footer{
-  font-size: 13px;
-  font-weight: lighter;
+.ms-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2vh;
+}
+
+.ms-h1 {
+  display: inline;
+  float: left;
   text-align: center;
   color: blanchedalmond;
   font-family: serif;
+  font-size: 250%;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.login {
+.ms-login {
   position: absolute;
   font-size: 100%;
   font-weight: lighter;
@@ -48,28 +58,67 @@
   right: 2%;
 }
 
-.booking {
-  font-size: 100%;
-  font-weight: lighter;
-  color: blanchedalmond;
-  font-family: serif;
-  font-style: italic;
-  right: 10%;
-  position: absolute;
-}
-
-
-
-
-
-header {
-  display: flex;
-  justify-content: center;
+.ms-body {
+  font-family: cursive;
+  background-image: url("backgroundPic.jpg");
+  background-size: 50%;
+  background-position: 100%;
   position: relative;
-  margin: 2vh;
 }
 
-img {  
+.ms-flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ms-flex-row-container>.ms-flex-row-item {
+  flex: 1 1 15%;
+  /*grow | shrink | basis */
+  height: auto;
+}
+
+.ms-flex-row-item {
+  color: blanchedalmond;
+}
+
+.ms-flex-row-item>h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+.ms-flex-row-item>p {
+  text-align: center;
+  font-style: italic;
+}
+
+.ms-middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.ms-middlediv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.ms-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-img {  
   align-self: center;
   height: 150px;
   width: 150px;
@@ -78,84 +127,11 @@ img {
   padding: 15px; 
 }
 
-a {
-  line-height: 5vh;
-}
-
-h1 {
-  display: inline;
-  float: left;
+.ms-footer {
+  font-size: 13px;
+  font-weight: lighter;
   text-align: center;
-  color:blanchedalmond;
+  color: blanchedalmond;
   font-family: serif;
-  font-size: 250%;
-  font-weight: bold;
   font-style: italic;
-}
-
-
-body{
-  font-family: cursive;
-  background-image: url("backgroundPic.jpg");
-  background-size: 50%;
-  background-position: 100%;
-  position: relative;
-}
-
-.middle {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.middlediv {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  color: blanchedalmond;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.imageSection {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  color: blanchedalmond;
-  text-align: center;
-  justify-content: center;
-}
-
-
-.flex-row-container {
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flex-row-container>.flex-row-item {
-  flex: 1 1 15%;
-  /*grow | shrink | basis */
-  height: auto;
-}
-
-.flex-row-item {
-  color:blanchedalmond;
-  
-
-}
-
-.flex-row-item>h2 {
-  text-align: center;
-}
-
-.flex-row-item>p {
-  text-align: center;
-}
-
-.calendar {
-  text-align: center;
-      margin-left: 5%;
 }
