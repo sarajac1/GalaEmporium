@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
 
-body{
+#dancebody{
   padding: 5px; 
   margin: 5px;
   max-width: 1200px; 
@@ -10,7 +10,7 @@ body{
 
 }
 
-header{
+#danceheader{
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -20,12 +20,12 @@ header{
 }
 
 
-.intro{
+.danceintro{
   display: flex;
   flex-direction: row; 
 }
 
-.intro p{
+.danceintro p{
   display: flex; 
   font-family: 'Playpen Sans', cursive;
   padding: 10px;
@@ -38,7 +38,7 @@ header{
 }
 
 
-.intro>img{
+.danceintro>img{
   padding: 5px;
   margin: 5px; 
   display: flex; 
