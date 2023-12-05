@@ -1,0 +1,113 @@
+#fancy_club.body {
+  margin: 0px;
+}
+
+#fancy_club.header {
+  background-color: black;
+  height: 75px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#fancy_club.main_heading {
+  margin-top: 0px;
+}
+
+#fancy_club.header_heading {
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+  padding-left: 50px;
+}
+
+#fancy_club.main_page {
+  display: flex;
+}
+
+#fancy_club.main {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#fancy_club.right {
+  width: 30%;
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#fancy_club.club_info {
+  text-align: center;
+  width: calc(100% - 20px);
+}
+
+
+#fancy_club.general_info {
+  font-size: 24px;
+}
+
+#fancy_club.ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#fancy_club.strong {
+  font-weight: bold;
+}
+
+#fancy_club.club_photo {
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+#fancy_club.club_photo_2 {
+  width: calc(100% - 40px);
+}
+
+#fancy_club.club_information {
+  width: auto
+}
+
+#fancy_club.footer {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fancy_club.downbar_button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  #fancy_club.main_page {
+    flex-direction: column;
+  }
+
+  #fancy_club.right {
+    width: 100%;
+  }
+
+  #fancy_club.club_photo {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+
+  #fancy_club.main {
+    width: auto;
+  }
+}

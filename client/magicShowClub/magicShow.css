@@ -1,0 +1,137 @@
+/* Added grid display to main tag*/
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+}
+
+/* Define grid template to be portrait for screens >= 500px */
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+      "header  header"
+      "content sidebar"
+      "footer  footer";
+  }
+}
+/* Define grid template to be landscape for screens >= 700px */
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+      "header header  header"
+      "content content sidebar"
+      "footer footer  footer";
+  }
+}
+
+.ms-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2vh;
+}
+
+.ms-h1 {
+  display: inline;
+  float: left;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+  font-size: 250%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.ms-login {
+  position: absolute;
+  font-size: 100%;
+  font-weight: lighter;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+  right: 2%;
+}
+
+.ms-body {
+  font-family: cursive;
+  background-image: url("backgroundPic.jpg");
+  background-size: 50%;
+  background-position: 100%;
+  position: relative;
+}
+
+.ms-flex-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ms-flex-row-container>.ms-flex-row-item {
+  flex: 1 1 15%;
+  /*grow | shrink | basis */
+  height: auto;
+}
+
+.ms-flex-row-item {
+  color: blanchedalmond;
+}
+
+.ms-flex-row-item>h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+.ms-flex-row-item>p {
+  text-align: center;
+  font-style: italic;
+}
+
+.ms-middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.ms-middlediv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.ms-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-img {  
+  align-self: center;
+  height: 150px;
+  width: 150px;
+  border: 5px dotted whitesmoke;
+  border-radius: 40px;
+  padding: 15px; 
+}
+
+.ms-footer {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
+}
