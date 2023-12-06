@@ -2,8 +2,12 @@
 import login from "./components/login.js"
 $('#login').html(login())
 
-//main page
+import cart from "./components/cart.js"
+cart()
+
+// pages, used in router
 import home from "./pages/home.js"
+import about from "./pages/about.js"
 
 //vampire club
 import vampireclub from "./pages/vampireclub.js"
@@ -14,6 +18,10 @@ async function router() {
 
     case "":
       $('main').html(home())
+      break
+
+    case "#about":
+      $('main').html(about())
       break
 
     case "#vampireclub":
@@ -29,8 +37,3 @@ async function router() {
 // event handlers, calls the router function on each event (change, load)
 window.onhashchange = router
 window.onload = router
-
-
-// event handlers, calls the router function on each event (change, load)
-// window.onhashchange = router
-// window.onload = router

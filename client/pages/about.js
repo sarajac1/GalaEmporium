@@ -1,0 +1,13 @@
+export default function(){
+ return `
+  <h2>About our historical endeavour</h2>
+  <p>Once hidden within the narrow alleyways of a quaint town, nestled between ordinary shops, there stood an enigmatic emporium known as "Page Turner's Shoppe of Lesser Artifacts &amp; Ethereal Specimens." Its appearance, unassuming yet intriguing, drew those with a penchant for the peculiar.</p>
+  <p>Page Turner, a character of mystical origins, was the guardian of this arcane establishment. He was a figure wrapped in mystery, his age impossible to discern. His eyes sparkled with ancient knowledge, and a well-worn tome was always clutched in his gnarled hands.</p>
+  <p>The shop, much like its proprietor, seemed to exist outside the constraints of time. The shelves were laden with oddities and artifacts that defied explanation. Antique trinkets from bygone eras mingled with curiosities of otherworldly origins. Customers ventured inside seeking the rare and the extraordinary, yet no one ever left with quite what they expected.</p>
+  <p>Page Turner, with his long, flowing robes and a beard that whispered tales of forgotten realms, greeted patrons with a cryptic smile. He spoke in riddles and wove stories around each item, turning the mundane into the extraordinary. His shop was a haven for collectors, mystics, and those who craved the uncanny.</p>
+  <p>Rumors circulated about the shop's origins. Some said it was a portal to dimensions beyond mortal comprehension, while others believed it was a repository of forgotten dreams and lost memories. Whispers of enchanted relics and ethereal specimens captured the imagination of the townsfolk.</p>
+  <p>One day, a curious soul stumbled upon the shop, drawn by the whispers of its peculiar allure. Intrigued, they entered, and Page Turner welcomed them with a knowing nod. The patron, eager to uncover the secrets within, browsed the shelves, discovering relics that sparked both wonder and trepidation.</p>
+  <p>As time passed, Page Turner shared tales of the artifacts' origins, intertwining history and fantasy. The patron, once a skeptic, found themselves ensnared in the magic of the shop. Each visit became a journey into the unknown, a pilgrimage to a place where reality blurred, and imagination ran wild.</p>
+  <p>And so, "Page Turner's Shoppe of Lesser Artifacts &amp; Ethereal Specimens" became a legend in its own right, a haven for those seeking the extraordinary. Page Turner continued to weave his enigmatic tales, ensuring that the shop remained a beacon for the curious, the dreamers, and those who dared to believe in the magic that lingered just beyond the veil of the ordinary.</p>
+ `
+}
