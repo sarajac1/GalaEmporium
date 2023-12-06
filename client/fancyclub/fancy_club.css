@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+#fancy_club.header_logo{
+  text-decoration: none;
+}
+
 #fancy_club.main_heading {
   margin-top: 0px;
 }
