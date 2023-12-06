@@ -7,7 +7,6 @@ cart()
 
 // pages, used in router
 import home from "./pages/home.js"
-import about from "./pages/about.js"
 
 //vampire club
 import vampireclub from "./pages/vampireclub.js"
@@ -18,10 +17,6 @@ async function router() {
 
     case "":
       $('main').html(home())
-      break
-
-    case "#about":
-      $('main').html(about())
       break
 
     case "#vampireclub":

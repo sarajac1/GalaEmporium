@@ -69,5 +69,6 @@ export default function home() {
     </footer>
 
   </div>
- `
+
+  `
 }
