@@ -10,6 +10,7 @@ import home from "./pages/home.js"
 
 //vampire club
 import vampireclub from "./pages/vampireclub.js"
+import danceclub from "./pages/danceclub.js"
 
 // routed pages
 async function router() {
@@ -18,6 +19,11 @@ async function router() {
     case "":
       $('main').html(home())
       break
+
+    case "#danceclub":
+      $('main').html(danceclub())
+      break
+
 
     case "#vampireclub":
       $('main').html(vampireclub())

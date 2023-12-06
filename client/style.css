@@ -262,3 +262,70 @@ main {
 .vamrow_text::-webkit-scrollbar-thumb:hover {
   background: red;
 }
+
+
+/* Dance club */
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+
+.dancebody {
+  padding: 5px;
+
+  max-width: 900px;
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  background-color: white;
+}
+
+.danceheader {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+.danceheader>img {
+  width: 875px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro p {
+  display: flex;
+  font-family: 'Playpen Sans', cursive;
+  padding: 10px;
+  max-width: 30%;
+  border-style: dotted;
+  margin-right: 5px;
+  border-left: none;
+  border-color: rgb(235, 153, 153);
+  color: #000000;
+
+}
+
+
+.intro>img {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  max-width: 50vw;
+
+}
+
+.ballet {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.ballet iframe {
+  width: 100%;
+  height: 400px;
+}
