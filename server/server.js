@@ -2,6 +2,7 @@ import express from 'express'
 import mysql from 'mysql'
 import session from 'express-session'
 import { promisify } from 'util'
+import apiRegister from './api-register.js'  
 
 const server = express()
 const port = 3000
@@ -38,6 +39,8 @@ db.connect(err => {
   // serve static client directory
   server.use(express.static("../client"));
 
+  // connect to API:s
+  apiRegister(server, db)
   
   // Start the server
   server.listen(port, () => {
