@@ -33,6 +33,26 @@ body {
 
 }
 
+#login-background {
+  background: #0b132b;
+}
+
+.ge-login>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Dosis';
+  color: antiquewhite;
+}
+
+.ge-login>button {
+  background-color: #efe6ce;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Dosis';
+}
+
+
 
 footer {
   background-color: black;
@@ -180,11 +200,11 @@ main {
 }
 
 #vamheader {
-  content: url("../client/img/vamheader.png");
+  content: url("img/vamheader.png");
   width: 100%;
 }
 
-.vamloginform>input {
+.vampire-login>input {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: #000000;
@@ -192,7 +212,7 @@ main {
   color: antiquewhite;
 }
 
-.vamloginform>button {
+.vampire-login>button {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: #000000;
@@ -200,7 +220,7 @@ main {
   font-family: 'Poiret One';
 }
 
-.vamloginform>button:hover {
+.vampire-login>button:hover {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: red;
@@ -231,7 +251,8 @@ main {
 
 }
 
-.vamrow_images>img {
+#vamcollage {
+  content: url("img/vamcollage.png");
   width: 90%;
   max-height: 500px;
   justify-self: right;
