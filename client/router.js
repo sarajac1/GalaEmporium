@@ -11,6 +11,7 @@ import home from "./pages/home.js"
 //vampire club
 import vampireclub from "./pages/vampireclub.js"
 import danceclub from "./pages/danceclub.js"
+import fancyclub from "./pages/fancyclub.js"
 
 // routed pages
 async function router() {
@@ -27,6 +28,10 @@ async function router() {
 
     case "#vampireclub":
       $('main').html(vampireclub())
+      break
+    
+    case "#fancyclub":
+      $('main').html(fancyclub())
       break
 
     default:
