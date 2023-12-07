@@ -270,19 +270,19 @@ main {
 
 
 .dancebody {
-  padding: 10px;
-  margin: 5px; 
+  padding: 5px;
   max-width: 900px;
   border-style: dotted;
   border-color: rgb(235, 153, 153);
+  border-width: 4px;
   background-color: white;
 }
 
 .danceheader {
   display: flex;
   justify-content: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  
   max-width: 100%;
 }
 
@@ -297,11 +297,12 @@ main {
 
 .intro p {
   display: flex;
+  align-items: center;
   font-family: 'Playpen Sans', cursive;
-  padding: 10px;
+  padding: 5px;
   max-width: 30%;
+  margin: 5px; 
   border-style: dotted;
-  margin-right: 5px;
   border-left: none;
   border-color: rgb(235, 153, 153);
   color: #000000;
@@ -310,8 +311,7 @@ main {
 
 
 .intro>img {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
   display: flex;
   max-width: 35vw;
 
