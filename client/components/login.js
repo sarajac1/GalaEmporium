@@ -43,7 +43,7 @@ async function logout() {
   let result = await response.json();
   console.log(result)
   if (!result.loggedIn) {
-    $('#login').html(init())    
+    $('#login').html(init())
   }
 }
 
