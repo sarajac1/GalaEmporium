@@ -7,8 +7,6 @@ cart()
 
 // pages, used in router
 import home from "./pages/home.js"
-
-//vampire club
 import vampireclub from "./pages/vampireclub.js"
 import danceclub from "./pages/danceclub.js"
 import fancyclub from "./pages/fancyclub.js"

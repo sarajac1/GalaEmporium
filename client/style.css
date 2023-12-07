@@ -337,29 +337,11 @@ main {
   margin: 0px;
 }
 
-#fancy_club.header {
-  background-color: black;
-  height: 75px;
-  width: auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#fancy_club.header_logo {
-  text-decoration: none;
-}
 
 #fancy_club.main_heading {
   margin-top: 0px;
 }
 
-#fancy_club.header_heading {
-  color: white;
-  font-size: 30px;
-  margin: 0px;
-  padding-left: 50px;
-}
 
 #fancy_club.main_page {
   display: flex;
@@ -373,6 +355,8 @@ main {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  background-color: white;
+  color: black;
 }
 
 #fancy_club.right {

@@ -1,12 +1,6 @@
 export default function () {
   return ` 
-  <body id="fancy_club" class="body">
-
-  <header id="fancy_club" class="header">
-    <a id="fancy_club" class="header_logo" href="GalaEmporium/client/index.html">
-      <h1 id="fancy_club" class="header_heading">Gala Emporium</h1>
-    </a>
-  </header>
+  <div id="fancy_club" class="body">
 
 
   <div id="fancy_club" class="main_page">
@@ -73,7 +67,7 @@ export default function () {
 
     </right>
   </div>
-</body>
+</div>
 
 <footer id="fancy_club" class="footer">
   <div id="fancy_club" class="footer_buttons">
@@ -81,6 +75,7 @@ export default function () {
     <button id="fancy_club" class="downbar_button" type="button">Terms & Conditions</button>
     <button id="fancy_club" class="downbar_button" type="button">Contacts</button>
   </div>
-</footer> `
+</footer> 
+`
 
 }
