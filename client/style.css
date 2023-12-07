@@ -270,8 +270,8 @@ main {
 
 
 .dancebody {
-  padding: 5px;
-
+  padding: 10px;
+  margin: 5px; 
   max-width: 900px;
   border-style: dotted;
   border-color: rgb(235, 153, 153);
@@ -310,10 +310,10 @@ main {
 
 
 .intro>img {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
   display: flex;
-  max-width: 50vw;
+  max-width: 35vw;
 
 }
 
