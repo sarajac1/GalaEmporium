@@ -93,8 +93,6 @@ a:hover {
   font-weight: bold;
 }
 
-
-
 main {
   background-color: #A4B2D4;
   color: white;
@@ -535,4 +533,70 @@ main {
   #fancy_club.main {
     width: auto;
   }
+}
+
+/* Magic Show Club CSS */
+
+.ms-main {
+  display: flex;
+  background: url("./magicShowClub/backgroundPic.jpg");
+}
+
+.ms-middle {
+  background: url("./magicShowClub/backgroundPic.jpg");
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.ms-middlediv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.ms-aside {
+  width: 30%;
+  float: right;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+  border: 5px dotted whitesmoke;
+}
+
+.ms-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-img {
+  align-self: center;
+  height: 130px;
+  width: 130px;
+  border: 5px dotted whitesmoke;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.ms-footer {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
 }
