@@ -5,11 +5,25 @@ export default function () {
 
   <div id="dancewrapper">
   <div class="intro"><p>
-    Welcome to Dance Stage, the pulsating heart of Gala Emporium dedicated to the art of dance. Step into a world where
-    movement becomes poetry, and every performance is a celebration of rhythm and expression. Dance Stage is more than
+    Welcome to Dance Stage, the pulsating heart of Gala Emporium dedicated to the art of dance. <br> Step into a world where
+    movement becomes poetry, and every performance is a celebration of rhythm and expression. <br> Dance Stage is more than
     a club; it's a dance sanctuary where the stage comes alive with a symphony of motion and emotion. <br>
-  <br> <br> Tickets can be booked soon! </p>
+  <br> Get your tickets today! </p>
   <img src="../client/img/dancers.jpeg" alt=""></div>
+
+   
+
+        <div id="dance" class="calendar">
+        <img src="../client/img/dancedec.png" alt="">
+        <h1 id="dance class="calendar_heading"><h1>Our events:</h1>
+        <ul id="dance" class="ul">
+          <li><strong id="dance" class="strong">Enchanted Elegance Ballet </strong>- 22 December 2023 - 19:00</li>
+          <li><strong id="dance" class="strong">Salsa Sensation  </strong>- 31 December 2023 - 23:00</li>
+          <li><strong id="dance" class="strong">Acrobatic Aerial Dance</strong>- 5 January 2024 - 10:00</li>
+          <li><strong id="dance" class="strong">Jazz Fusion Jam</strong>- 12 January 2024 - 14:00</li>
+          <li><strong id="dance" class="strong">Bollywood Beats</strong>- 7 February 2023 - 16:00</li>
+        </ul>
+      </div>
 
   <div class="ballet">
     <iframe src="https://www.youtube.com/embed/0GsajWIF3ws"
@@ -20,5 +34,9 @@ export default function () {
 
   </div>
 </div>
+
+<footer id="dance" class="footer">
+<h3>Contact us</h3>
+</footer>
  `
 }

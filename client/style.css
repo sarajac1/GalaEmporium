@@ -272,10 +272,11 @@ main {
 .dancebody {
   padding: 5px;
   max-width: 900px;
-  border-style: dotted;
-  border-color: rgb(235, 153, 153);
-  border-width: 4px;
   background-color: white;
+  border-color: rgb(235, 153, 153);
+  border-style:solid;
+  border-bottom: none;
+ 
 }
 
 .danceheader {
@@ -293,19 +294,20 @@ main {
 .intro {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .intro p {
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Playpen Sans', cursive;
   padding: 5px;
-  max-width: 30%;
+  max-width: 35%;
   margin: 5px; 
-  border-style: dotted;
-  border-left: none;
   border-color: rgb(235, 153, 153);
+  border-style: dotted;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 2%;
   color: #000000;
 
 }
@@ -314,8 +316,43 @@ main {
 .intro>img {
   padding: 5px;
   display: flex;
-  max-width: 35vw;
+  max-width: 30vw;
+  border-radius: 5%;
 
+}
+
+#dance.calendar {
+  text-align: center;
+  max-width: 100%;
+  padding: 5px;
+  display: flex; 
+  justify-content: space-around;
+  
+  color: black; 
+  background-color: white; 
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  border-top: none;
+  border-radius: 1%;
+  border-left: none;
+  border-right: none;
+}
+
+#dance.calendar>img{
+  max-height: 15vh;
+}
+
+#dance.calendar_heading {
+  font-size: 26px;
+}
+
+#dance.ul {
+  list-style-type: none;
+  
+}
+
+#dance.strong {
+  font-weight: bold;
 }
 
 .ballet {
@@ -329,4 +366,14 @@ main {
 .ballet iframe {
   width: 100%;
   height: 400px;
+}
+
+#dance.footer{
+  background-color: white;
+  color: black; 
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  border-bottom: none;
+  border-left: none;
+  border-right: none; 
 }
