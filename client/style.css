@@ -1,0 +1,331 @@
+html {
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  background-color: #080811;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Dosis';
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#container {
+  border-style: solid;
+  border-color: #000000;
+}
+
+
+#header {
+  text-align: center;
+  background: white;
+  width: 100%;
+  content: url(img/header.jpg);
+  max-width: 900px;
+  object-fit: cover;
+
+}
+
+
+footer {
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+
+}
+
+nav {
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  max-width: 900px;
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+
+
+main {
+  background-color: #A4B2D4;
+  color: white;
+  max-width: 900px;
+  width: 900px;
+}
+
+
+.bordertext {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  width: 600px;
+  margin: auto;
+}
+
+#threeColumns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.borderimg {
+  flex: 0 0 30%;
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.borderimg {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  margin: auto;
+  max-width: 200px;
+
+}
+
+.borderimg>img {
+  max-width: 200px;
+}
+
+.calendar {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+}
+
+#calendar {
+  flex: 60%;
+  background-color: aliceblue;
+}
+
+#bookingText {
+  flex: 40%;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.magic-show img {
+  width: 100%;
+}
+
+.dancestage img {
+  width: 100%;
+}
+
+.vampireclub img {
+  width: 100%;
+}
+
+.fancy-club img {
+  width: 100%;
+}
+
+
+
+
+/*Vampire Club*/
+
+.vamwrapper {
+  color: antiquewhite;
+  font-family: 'Poiret One';
+  background-color: rgb(0, 0, 0);
+  max-width: 875px;
+  margin: auto;
+  width: 100%;
+  border: 3px solid #2B2119;
+  padding: 10px;
+}
+
+#vamheader {
+  content: url("../client/img/vamheader.png");
+  width: 100%;
+}
+
+.vamloginform>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Poiret One';
+  color: antiquewhite;
+}
+
+.vamloginform>button {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vamloginform>button:hover {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vamcontainer {
+  display: flex;
+  background-color: black;
+}
+
+.vamrow_text {
+  background-color: rgb(0, 0, 0);
+  flex: 50%;
+  height: 400px;
+  overflow: auto;
+  padding-left: 20px;
+}
+
+.vamrow_text::first-letter {
+  initial-letter: 2;
+}
+
+.vamrow_images {
+  background-color: black;
+  flex: 50%;
+
+}
+
+.vamrow_images>img {
+  width: 90%;
+  max-height: 500px;
+  justify-self: right;
+}
+
+.vamcalendar {
+  background-color: antiquewhite;
+  color: #000000;
+  justify-content: center;
+}
+
+.vamcalendarInfo {
+  background-color: rgb(0, 0, 0);
+}
+
+.vamrow_text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.vamrow_text::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.vamrow_text::-webkit-scrollbar-thumb {
+  background: darkred;
+}
+
+.vamrow_text::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+
+/* Dance club */
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+
+.dancebody {
+  padding: 5px;
+
+  max-width: 900px;
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+  background-color: white;
+}
+
+.danceheader {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+.danceheader>img {
+  width: 875px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro p {
+  display: flex;
+  font-family: 'Playpen Sans', cursive;
+  padding: 10px;
+  max-width: 30%;
+  border-style: dotted;
+  margin-right: 5px;
+  border-left: none;
+  border-color: rgb(235, 153, 153);
+  color: #000000;
+
+}
+
+
+.intro>img {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  max-width: 50vw;
+
+}
+
+.ballet {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.ballet iframe {
+  width: 100%;
+  height: 400px;
+}
