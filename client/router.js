@@ -2,8 +2,9 @@
 import login from "./components/login.js"
 $('#login').html(login())
 
-import cart from "./components/cart.js"
-cart()
+import events from "./components/events.js"
+events()
+
 
 // pages, used in router
 import home from "./pages/home.js"
@@ -37,6 +38,7 @@ async function router() {
 
   }
 }
+
 
 // event handlers, calls the router function on each event (change, load)
 window.onhashchange = router
