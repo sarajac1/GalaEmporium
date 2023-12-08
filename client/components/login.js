@@ -1,13 +1,18 @@
-
 export default function init() {
   return `
     <form onsubmit="login(); return false">
-      <input name="email" placeholder="your email">
-      <br>
-      <input name="password" placeholder="your password">
-      <br>
-      <input type="submit" value="Login">
-    </form>  
+      <input name="email" placeholder="your email" style="border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Dosis';
+background-color: #efe6ce;
+">
+      <input name="password" placeholder="your password" style="border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Dosis';
+background-color: #efe6ce;">
+      <input type="submit" value="Login" style="background-color: #efe6ce; border: 2px solid white;  border-radius: 4px;
+  font-family: 'Dosis';">
+    </form>
   `
 }
 
