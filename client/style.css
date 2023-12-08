@@ -297,6 +297,7 @@ main {
 
 .intro p {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-family: 'Playpen Sans', cursive;
   padding: 5px;
