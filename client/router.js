@@ -2,9 +2,8 @@
 import login from "./components/login.js"
 $('#login').html(login())
 
-import events from "./components/events.js"
-events()
-
+//import events from "./components/events.js"
+//events()
 
 // pages, used in router
 import home from "./pages/home.js"
@@ -34,7 +33,7 @@ async function router() {
       break
 
     case "#magicshowclub":
-      $('main').html(magicshowclub())
+      $('main').html(await magicshowclub())
       break
     
     

@@ -1,4 +1,7 @@
-export default function () {
+import { loadEvent_ms, renderEvents_ms } from "../components/events.js"
+export default async function () {
+  const magicshowevents = await loadEvent_ms();
+  
   return ` 
 
 <div class="ms-main">
@@ -43,16 +46,17 @@ export default function () {
             </div>
             </div>
             </main>
-        <aside class="ms-aside" id="events">
+
+        <aside class="ms-aside">
         <h2>Upcoming Events</h2>
-        <p>The Great Magic Show in Malmö-Hyllie on 23-December-2023 at 17:00</p>
-        <p>The Great Magic Show in Burlöv Centre on 26-December-2023 at 17:00</p>
+          <ul class="ms-ul">
+          ${renderEvents_ms(magicshowevents)}
+          </ul>       
         </aside>
-       </div> 
-     
+       </div>      
   <footer>
     <p class="ms-footer">Designed & Developed by Group8, Students @ NBI/Handelsakademin, Malmö, Sweden </p>
   </footer>
  `
-
 }
+

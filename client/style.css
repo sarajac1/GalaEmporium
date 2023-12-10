@@ -563,16 +563,24 @@ main {
 
 .ms-aside {
   width: 30%;
-  float: right;
   flex-wrap: wrap;
   flex-direction: row;
   color: blanchedalmond;
   text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
   font-style: italic;
   border: 5px dotted whitesmoke;
 }
+
+.ms-ul {
+  text-align: left;
+}
+
+.ms-ul>li {
+  margin-bottom: 10px;
+}
+
 
 .ms-image-section {
   display: flex;

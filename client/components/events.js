@@ -1,36 +1,22 @@
-export default async function init() {
-  $("#events").html(await loadEvent())
-}
-
-async function loadEvent() {
+export async function loadEvent_ms() {
   const response = await fetch("/api/events/magicshowclub")
   const eventsList = await response.json()
-  console.log(eventsList)
-
-  if (eventsList.length > 0) {
-    return renderEvents(eventsList)
-  }
+  console.log("Log from Magicshow",eventsList)
+ return eventsList
 }
 
-function renderEvents(eventsList) {
+export function renderEvents_ms(eventsList) {
   let events = ""
   
   for (let event of eventsList) {
     events += `
       <li>
-
-          ${event.title} - ${event.description} - ${event.starts_at} - ${event.ends_at}
-          
+          ${event.title} - ${event.description} - ${event.starts_at.substring(0,16).replace('T', ' from ' )} to ${event.ends_at .substring(11,16)}          
       </li>
     `
   }
-
-  return `
-    <h2>Upcoming Events</h2>
-    <ul>
-
-      ${events}
-    
-      </ul>    
-  `
+  return events
 }
+
+
+
