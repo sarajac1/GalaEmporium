@@ -16,22 +16,19 @@ export default async function home() {
           <div class="row">
           <div class="borderimg">
             <a class="magic-show" href="client/magicShowClub/magicShowMain.html">
-              <img src="img/magic-show.jpg" alt="">Our web platform serves as a portal to the dynamic
-              world of live entertainment.
+              <img src="img/magic-show.jpg" alt="">Do you love magic? Of course you do! Then The Great Magic Show is for you!
             </a>
           </div>
 
           <div class="borderimg">
             <a class="dancestage" href="dancestage/dance.html">
-              <img src="img/dance_stage.jpg" alt="">Our web platform serves as a portal to the dynamic
-              world of live entertainment.
+              <img src="img/dance_stage.jpg" alt="">Dance club
             </a>
           </div>
 
           <div class="borderimg">
             <a class="vampireclub" href="vampireclub/vampireclub.html">
-              <img src="img/eclipsed_embrace.jpg" alt="">Our web platform serves as a portal to the dynamic
-              world of live entertainment.
+              <img src="img/eclipsed_embrace.jpg" alt="">Vampire club
             </a>
           </div>
         </div>
