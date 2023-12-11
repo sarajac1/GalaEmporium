@@ -25,9 +25,9 @@ async function router() {
       break
 
     case "#vampireclub":
-      $('main').html(vampireclub())
+      $('main').html(await vampireclub())
       break
-    
+
     case "#fancyclub":
       $('main').html(fancyclub())
       break
@@ -35,8 +35,8 @@ async function router() {
     case "#magicshowclub":
       $('main').html(await magicshowclub())
       break
-    
-    
+
+
     default:
       $('main').html(`<h2><strong>404</strong> Good job! You've broken the internet.</h2>`)
 
