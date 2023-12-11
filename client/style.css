@@ -295,9 +295,9 @@ main {
   max-width: 900px;
   background-color: white;
   border-color: rgb(235, 153, 153);
-  border-style:solid;
+  border-style: solid;
   border-bottom: none;
- 
+
 }
 
 .danceheader {
@@ -322,7 +322,7 @@ main {
   font-family: 'Playpen Sans', cursive;
   padding: 5px;
   max-width: 35%;
-  margin: 5px; 
+  margin: 5px;
   border-color: rgb(235, 153, 153);
   border-style: dotted;
   border-right: none;
@@ -343,10 +343,10 @@ main {
 #dance.calendar {
   max-width: 100%;
   padding: 5px;
-  display: flex; 
+  display: flex;
   justify-content: space-around;
-  color: black; 
-  background-color: white; 
+  color: black;
+  background-color: white;
   border-style: dotted;
   border-color: rgb(235, 153, 153);
   border-top: none;
@@ -355,7 +355,7 @@ main {
   border-right: none;
 }
 
-#dance.calendar>img{
+#dance.calendar>img {
   max-height: 15vh;
 }
 
@@ -365,7 +365,7 @@ main {
 
 #dance.ul {
   list-style-type: none;
-  
+
 }
 
 #dance.strong {
@@ -385,15 +385,15 @@ main {
   height: 400px;
 }
 
-#dance.footer{
+#dance.footer {
   background-color: white;
-  color: black; 
+  color: black;
   border-style: dotted;
   border-color: rgb(235, 153, 153);
   border-bottom: none;
   border-left: none;
-  border-right: none; 
-=======
+  border-right: none;
+}
 
 /* Fancy club */
 
