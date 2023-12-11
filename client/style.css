@@ -425,7 +425,7 @@ main {
 
 #fancy_club.right {
   width: 30%;
-  background-color: darkgray;
+  background-color: lightgray;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -434,7 +434,7 @@ main {
 }
 
 #fancy_club.login_form {
-  background-color: white;
+  background-color: darkgray;
   border-radius: 5px;
   width: calc(100% - 20px);
   display: flex;
@@ -476,7 +476,7 @@ main {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: darkgray;
+  background-color: lightgray;
   color: black;
   cursor: pointer;
 
@@ -489,7 +489,7 @@ main {
 #fancy_club.club_info {
   text-align: center;
   width: calc(100% - 20px);
-  background-color: white;
+  background-color: darkgray;
   border-radius: 5px;
 }
 
@@ -501,7 +501,7 @@ main {
 #fancy_club.calendar {
   text-align: center;
   width: calc(100% - 20px);
-  background-color: white;
+  background-color: darkgray;
   border-radius: 5px;
 }
 

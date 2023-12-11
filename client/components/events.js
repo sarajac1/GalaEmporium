@@ -66,3 +66,26 @@ export function renderEvents_vc(eventsList) {
   return events
 }
 
+
+// fancy club
+
+export async function loadEvent_fc() {
+  const response = await fetch("/api/events/fancyclub")
+  const eventsList = await response.json()
+  console.log("Log from Fancy club", eventsList)
+  return eventsList
+}
+
+
+export function renderEvents_fc(eventsList) {
+  let events = ""
+
+  for (let event of eventsList) {
+    events += `
+      <li>
+          <h2>${event.title}</h2> ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)} <br> ${event.description}          
+      </li>
+    `
+  }
+  return events
+}

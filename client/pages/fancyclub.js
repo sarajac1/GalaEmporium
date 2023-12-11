@@ -1,4 +1,7 @@
-export default function () {
+import { loadEvent_fc, renderEvents_fc } from "../components/events.js"
+export default async function () {
+  const fancyclubevents = await loadEvent_fc();
+
   return ` 
   <div id="fancy_club" class="body">
 
@@ -41,14 +44,16 @@ export default function () {
       </div>
 
       <div id="fancy_club" class="calendar">
-        <h1 id="fancy_club" class="calendar_heading">Our upcoming events!</h1>
+        <!--<h1 id="fancy_club" class="calendar_heading">Our upcoming events!</h1>
         <ul id="fancy_club" class="ul">
           <li><strong id="fancy_club" class="strong">Fancy Party </strong>- 12 December 2023 - 22:00</li>
           <li><strong id="fancy_club" class="strong">Movie Night </strong>- 29 December 2023 - 18:00</li>
           <li><strong id="fancy_club" class="strong">The Great Gatsby Evening</strong>- 15 Feburary 2024 - 22:00</li>
           <li><strong id="fancy_club" class="strong">Not Fancy Party </strong>- 23 March 2024 - 12:00</li>
           <li><strong id="fancy_club" class="strong">Music Evening </strong>- 7 April 2023 - 16:00</li>
-        </ul>
+        </ul>-->
+
+        
       </div>
 
 
@@ -68,6 +73,13 @@ export default function () {
     </right>
   </div>
 </div>
+
+<aside>
+  <h2>Upcoming Events</h2>
+  <ul class="fc-ul">
+    ${renderEvents_fc(fancyclubevents)}
+  </ul>       
+</aside>
 
 <footer id="fancy_club" class="footer">
   <div id="fancy_club" class="footer_buttons">
