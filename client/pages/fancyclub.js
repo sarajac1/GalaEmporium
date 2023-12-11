@@ -28,7 +28,7 @@ export default async function () {
 
     <right id="fancy_club" class="right">
 
-      <div id="fancy_club" class="login_form">
+      <!-- <div id="fancy_club" class="login_form">
         <h2 id="fancy_club" class="login_h2">Login</h2>
         <form id="fancy_club" class="form">
           <div id="fancy_club" class="input_group">
@@ -44,42 +44,44 @@ export default async function () {
       </div>
 
       <div id="fancy_club" class="calendar">
-        <!--<h1 id="fancy_club" class="calendar_heading">Our upcoming events!</h1>
+        <h1 id="fancy_club" class="calendar_heading">Our upcoming events!</h1>
         <ul id="fancy_club" class="ul">
           <li><strong id="fancy_club" class="strong">Fancy Party </strong>- 12 December 2023 - 22:00</li>
           <li><strong id="fancy_club" class="strong">Movie Night </strong>- 29 December 2023 - 18:00</li>
           <li><strong id="fancy_club" class="strong">The Great Gatsby Evening</strong>- 15 Feburary 2024 - 22:00</li>
           <li><strong id="fancy_club" class="strong">Not Fancy Party </strong>- 23 March 2024 - 12:00</li>
           <li><strong id="fancy_club" class="strong">Music Evening </strong>- 7 April 2023 - 16:00</li>
-        </ul>-->
+        </ul>
 
         
-      </div>
+      </div> -->
 
+      <aside id="fancy_club" class="calendar">
+        <h1 id="fancy_club" class="heading_1">Upcoming Events</h1>
+        <ul id="fancy_club" class="fc-ul">
+          ${renderEvents_fc(fancyclubevents)}
+        </ul>       
+      </aside>
 
-      <div id="fancy_club" class="club_info">
-        <h1 id="fancy_club" class="general_info">General info about fancy club</h1>
-        <ul id="fancy_club" class="ul">
-          <li><strong id="fancy_club" class="strong">Adress:</strong> The Pearl Club, 495 N. Milwaukee Avenue</li>
-          <li><strong id="fancy_club" class="strong">Open Hours:</strong> Every Day from 17:00 to 02:00</li>
-          <li><strong id="fancy_club" class="strong">Number of Tables:</strong> 25</li>
-        </ul>
-      </div>
+      <div id="fancy_club" class="right_box">
+        <div id="fancy_club" class="club_info">
+          <h1 id="fancy_club" class="general_info">General info about fancy club</h1>
+          <ul id="fancy_club" class="ul">
+            <li><strong id="fancy_club" class="strong">Adress:</strong> The Pearl Club, 495 N. Milwaukee Avenue</li>
+            <li><strong id="fancy_club" class="strong">Open Hours:</strong> Every Day from 17:00 to 02:00</li>
+            <li><strong id="fancy_club" class="strong">Number of Tables:</strong> 25</li>
+          </ul>
+        </div>
+        
 
-      <div id="fancy_club" class="club_info">
-        <h1>We are waiting for you!</h1>
+        <div id="fancy_club" class="club_info">
+          <h2>We are waiting for you!</h2>
+        </div>
       </div>
 
     </right>
   </div>
 </div>
-
-<aside>
-  <h2>Upcoming Events</h2>
-  <ul class="fc-ul">
-    ${renderEvents_fc(fancyclubevents)}
-  </ul>       
-</aside>
 
 <footer id="fancy_club" class="footer">
   <div id="fancy_club" class="footer_buttons">
