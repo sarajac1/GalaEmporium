@@ -33,6 +33,26 @@ body {
 
 }
 
+#login-background {
+  background: #0b132b;
+}
+
+.ge-login>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Dosis';
+  color: antiquewhite;
+}
+
+.ge-login>button {
+  background-color: #efe6ce;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Dosis';
+}
+
+
 
 footer {
   background-color: black;
@@ -72,8 +92,6 @@ a:visited {
 a:hover {
   font-weight: bold;
 }
-
-
 
 main {
   background-color: #A4B2D4;
@@ -180,11 +198,11 @@ main {
 }
 
 #vamheader {
-  content: url("../client/img/vamheader.png");
+  content: url("img/vamheader.png");
   width: 100%;
 }
 
-.vamloginform>input {
+.vampire-login>input {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: #000000;
@@ -192,7 +210,7 @@ main {
   color: antiquewhite;
 }
 
-.vamloginform>button {
+.vampire-login>button {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: #000000;
@@ -200,7 +218,7 @@ main {
   font-family: 'Poiret One';
 }
 
-.vamloginform>button:hover {
+.vampire-login>button:hover {
   border: 2px solid rgb(147, 147, 147);
   border-radius: 4px;
   background-color: red;
@@ -231,21 +249,22 @@ main {
 
 }
 
-.vamrow_images>img {
+#vamcollage {
+  content: url("img/vamcollage.png");
   width: 90%;
   max-height: 500px;
   justify-self: right;
 }
 
 .vamcalendar {
-  background-color: antiquewhite;
-  color: #000000;
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
   justify-content: center;
+  max-width: 400px;
+  list-style-type: none;
+
 }
 
-.vamcalendarInfo {
-  background-color: rgb(0, 0, 0);
-}
 
 .vamrow_text::-webkit-scrollbar {
   width: 10px;
@@ -372,4 +391,263 @@ main {
   border-bottom: none;
   border-left: none;
   border-right: none; 
+=======
+
+/* Fancy club */
+
+#fancy_club.body {
+  margin: 0px;
+}
+
+
+#fancy_club.main_heading {
+  margin-top: 0px;
+}
+
+
+#fancy_club.main_page {
+  display: flex;
+}
+
+#fancy_club.main {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+#fancy_club.right {
+  width: 30%;
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 7px;
+}
+
+#fancy_club.login_form {
+  background-color: white;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#fancy_club.login_h2 {
+  margin: 16px 0px 16px 0px;
+}
+
+#fancy_club.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#fancy_club.input_group {
+  margin-bottom: 15px;
+}
+
+#fancy_club.label {
+  font-weight: bold;
+}
+
+#fancy_club.login_form input[type="text"],
+#fancy_club.login_form input[type="password"] {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#fancy_club.login_button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: darkgray;
+  color: black;
+  cursor: pointer;
+
+}
+
+#fancy_club.login_button:hover {
+  background-color: lightgray;
+}
+
+#fancy_club.club_info {
+  text-align: center;
+  width: calc(100% - 20px);
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+#fancy_club.general_info {
+  font-size: 24px;
+}
+
+#fancy_club.calendar {
+  text-align: center;
+  width: calc(100% - 20px);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#fancy_club.calendar_heading {
+  font-size: 24px;
+}
+
+#fancy_club.ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#fancy_club.strong {
+  font-weight: bold;
+}
+
+#fancy_club.club_photo {
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+#fancy_club.club_photo_2 {
+  width: calc(100% - 40px);
+}
+
+#fancy_club.club_information {
+  width: auto
+}
+
+#fancy_club.footer {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fancy_club.downbar_button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+  #fancy_club.main_page {
+    flex-direction: column;
+  }
+
+  #fancy_club.right {
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #fancy_club.login_form {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.calendar {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.club_info {
+    margin-bottom: 20px;
+  }
+
+  #fancy_club.club_photo {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+
+  #fancy_club.main {
+    width: auto;
+  }
+}
+
+/* Magic Show Club CSS */
+
+.ms-main {
+  display: flex;
+  background: url("./magicShowClub/backgroundPic.jpg");
+}
+
+.ms-middle {
+  background: url("./magicShowClub/backgroundPic.jpg");
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.ms-middlediv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.ms-aside {
+  width: 30%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-style: italic;
+  border: 5px dotted whitesmoke;
+}
+
+.ms-ul {
+  text-align: left;
+}
+
+.ms-ul>li {
+  margin-bottom: 10px;
+}
+
+
+.ms-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: blanchedalmond;
+  text-align: center;
+  justify-content: center;
+}
+
+.ms-img {
+  align-self: center;
+  height: 130px;
+  width: 130px;
+  border: 5px dotted whitesmoke;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.ms-footer {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: serif;
+  font-style: italic;
 }

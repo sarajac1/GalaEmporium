@@ -1,18 +1,13 @@
-export default function () {
-  return `
-<div class="vamwrapper">
+import { loadEvent_vc, renderEvents_vc } from "../components/events.js"
+export default async function () {
+  const vampireevent = await loadEvent_vc();
+
+
+
+  return ` 
+  <div class="vamwrapper">
   <div id="vamheader"></div>
-  <div class="vamloginform">
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
     <br><br>
-  </div>
-
     <div class="vamcontainer">
       <div class="vamrow_text">
         <p>
@@ -76,17 +71,17 @@ export default function () {
           unknown,
           this enigmatic club promises an unforgettable journey into the shadows of the supernatural. <br></p>
       </div>
-      <div class="vamrow_images"><img src="../client/img/vamcollage.png" alt="">
+      <div class="vamrow_images"> <div id="vamcollage"></div>
 
       </div>
 </div>
 
     <div class="vamcalendar">
-      calendar
-    </div>
-    <div class="vamcalendarInfo">
-      calendar Information
+    <h1>Upcoming events</h1>
+          ${renderEvents_vc(vampireevent)}
     </div>
 
  `
 }
+
+//          ${renderEvents_vc(vampireevent)}
