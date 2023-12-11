@@ -36,7 +36,9 @@ export default function () {
 </div>
 
 <footer id="dance" class="footer">
-<h3>Contact us</h3>
+<h4>Contact us</h4>
+<h4>Social media</h4>
+<h4>FAQ</h4>
 </footer>
  `
 }
