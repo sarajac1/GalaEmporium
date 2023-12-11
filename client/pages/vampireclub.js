@@ -2,8 +2,6 @@ import { loadEvent_vc, renderEvents_vc } from "../components/events.js"
 export default async function () {
   const vampireevent = await loadEvent_vc();
 
-
-
   return ` 
   <div class="vamwrapper">
   <div id="vamheader"></div>
@@ -83,5 +81,3 @@ export default async function () {
 
  `
 }
-
-//          ${renderEvents_vc(vampireevent)}

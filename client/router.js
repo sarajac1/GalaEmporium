@@ -17,7 +17,7 @@ async function router() {
   switch (location.hash) {
 
     case "":
-      $('main').html(home())
+      $('main').html(await home())
       break
 
     case "#danceclub":

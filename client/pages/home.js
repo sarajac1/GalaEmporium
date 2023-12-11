@@ -1,4 +1,7 @@
-export default function home() {
+import { loadEvent_ge, renderEvents_ge } from "../components/events.js"
+export default async function home() {
+  const allevents = await loadEvent_ge()
+
   return `
     <main>
       <br>
@@ -53,9 +56,9 @@ export default function home() {
       <br>
 
       <div class="calendar">
-        <div id="calendar">Here is a calendar!</div>
+        <div id="calendar"></div>
         <div id="bookingText">
-          <h3>Booking</h3>Here you can do the booking
+         ${renderEvents_ge(allevents)}
         </div>
         <p><br></p>
       </div>
