@@ -12,7 +12,7 @@ export default function (server, db) {
       res.json(events)    
     })
 
-
+  // Add new event
   server.post('/api/events', async (req, res) => {
     const title = req.body.title.trim()
     const description = req.body.description
@@ -31,6 +31,23 @@ export default function (server, db) {
     } else {
       res.status(401)
       res.json({ eventAdded: false })
+    }
+  })
+
+  // Book event
+  server.post('/api/events/bookevent', async (req, res) => {
+    const event_id = req.body.event_id
+    const user_id = req.body.user_id
+
+    if (req.body.event_id != null) {
+      const result = await db.query("INSERT INTO event_attendees (event_id, user_id) VALUES (?, ?)",
+        [event_id, user_id])
+      result.eventBooked = true
+      res.json(result)
+      console.log("Result - ", result);
+    } else {
+      res.status(401)
+      res.json({ eventBooked: false })
     }
   })
 }
