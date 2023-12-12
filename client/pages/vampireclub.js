@@ -1,4 +1,7 @@
-export default function () {
+import { loadEvent_vc, renderEvents_vc } from "../components/events.js"
+export default async function () {
+  const vampireevent = await loadEvent_vc();
+
   return ` 
   <div class="vamwrapper">
   <div id="vamheader"></div>
@@ -72,10 +75,8 @@ export default function () {
 </div>
 
     <div class="vamcalendar">
-      calendar
-    </div>
-    <div class="vamcalendarInfo">
-      calendar Information
+    <h1>Upcoming events</h1>
+          ${renderEvents_vc(vampireevent)}
     </div>
 
  `

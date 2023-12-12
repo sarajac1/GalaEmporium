@@ -1,4 +1,7 @@
-export default function () {
+import { loadEvent_fc, renderEvents_fc } from "../components/events.js"
+export default async function () {
+  const fancyclubevents = await loadEvent_fc();
+
   return ` 
   <div id="fancy_club" class="body">
 
@@ -25,7 +28,7 @@ export default function () {
 
     <right id="fancy_club" class="right">
 
-      <div id="fancy_club" class="login_form">
+      <!-- <div id="fancy_club" class="login_form">
         <h2 id="fancy_club" class="login_h2">Login</h2>
         <form id="fancy_club" class="form">
           <div id="fancy_club" class="input_group">
@@ -49,20 +52,31 @@ export default function () {
           <li><strong id="fancy_club" class="strong">Not Fancy Party </strong>- 23 March 2024 - 12:00</li>
           <li><strong id="fancy_club" class="strong">Music Evening </strong>- 7 April 2023 - 16:00</li>
         </ul>
-      </div>
 
+        
+      </div> -->
 
-      <div id="fancy_club" class="club_info">
-        <h1 id="fancy_club" class="general_info">General info about fancy club</h1>
-        <ul id="fancy_club" class="ul">
-          <li><strong id="fancy_club" class="strong">Adress:</strong> The Pearl Club, 495 N. Milwaukee Avenue</li>
-          <li><strong id="fancy_club" class="strong">Open Hours:</strong> Every Day from 17:00 to 02:00</li>
-          <li><strong id="fancy_club" class="strong">Number of Tables:</strong> 25</li>
-        </ul>
-      </div>
+      <aside id="fancy_club" class="calendar">
+        <h1 id="fancy_club" class="heading_1">Upcoming Events</h1>
+        <ul id="fancy_club" class="fc-ul">
+          ${renderEvents_fc(fancyclubevents)}
+        </ul>       
+      </aside>
 
-      <div id="fancy_club" class="club_info">
-        <h1>We are waiting for you!</h1>
+      <div id="fancy_club" class="right_box">
+        <div id="fancy_club" class="club_info">
+          <h1 id="fancy_club" class="general_info">General info about fancy club</h1>
+          <ul id="fancy_club" class="ul">
+            <li><strong id="fancy_club" class="strong">Adress:</strong> The Pearl Club, 495 N. Milwaukee Avenue</li>
+            <li><strong id="fancy_club" class="strong">Open Hours:</strong> Every Day from 17:00 to 02:00</li>
+            <li><strong id="fancy_club" class="strong">Number of Tables:</strong> 25</li>
+          </ul>
+        </div>
+        
+
+        <div id="fancy_club" class="club_info">
+          <h2>We are waiting for you!</h2>
+        </div>
       </div>
 
     </right>
