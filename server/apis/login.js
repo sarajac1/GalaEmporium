@@ -16,13 +16,14 @@ export default function (server, db) {
     const users = await db.query("SELECT * FROM users WHERE email = ? AND password = ?", [req.body.email, req.body.password])
     if (users[0]) {
       req.session.user = users[0]
+      let userId = users[0].id
       //res.json({ loggedIn: true })
       
       const clubOrganiser = await db.query("SELECT * FROM clubs WHERE admin = ?", [users[0].id])
       if (clubOrganiser[0]) {
-        res.json({visitor: false, loggedIn: true})
+        res.json({ visitor: false, loggedIn: true, id:userId})
       } else {
-            res.json({visitor: true, loggedIn: true})
+            res.json({visitor: true, loggedIn: true, id:userId})
       }
 
     }else{
