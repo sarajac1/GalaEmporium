@@ -76,7 +76,7 @@ export default async function () {
                     </div>
                 </section>
             </div>
-            <! -- </main> -->
+            <!-- </main> -->
 
 
             <footer class="cc-footer">
