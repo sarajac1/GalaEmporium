@@ -11,6 +11,7 @@ import vampireclub from "./pages/vampireclub.js"
 import danceclub from "./pages/danceclub.js"
 import fancyclub from "./pages/fancyclub.js"
 import magicshowclub from "./pages/magicshowclub.js"
+import cowboyclub from "./pages/cowboy.js"
 
 // routed pages
 async function router() {
@@ -36,6 +37,9 @@ async function router() {
       $('main').html(await magicshowclub())
       break
 
+    case "#cowboyclub":
+      $('main').html(cowboyclub())
+      break
 
     default:
       $('main').html(`<h2><strong>404</strong> Good job! You've broken the internet.</h2>`)
