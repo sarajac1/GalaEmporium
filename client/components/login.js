@@ -33,9 +33,17 @@ async function login() {
   let result = await response.json();
   console.log(result)
   if (result.loggedIn) {
-    $('#login').html(`
+    if (result.visitor != null && result.visitor) {
+      $('#login').html(`
       <button onclick="logout()">Logout</button>
+      <button>Add Event</button>
     `)
+    } else {
+      $('#login').html(`
+      <button onclick="logout()">Logout</button>
+      <button>Book Event</button>
+    `)
+    }
   }
 }
 
