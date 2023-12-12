@@ -1,40 +1,31 @@
-export default function () {
-  return `
+import { loadEvent_cc, renderEvents_cc } from "../components/events.js"
+export default async function () {
+    const cowboyevent = await loadEvent_cc();
+    return `
 
-        <body class="cc-body">
+        <div class="cc-body">
 
-            <header class="cc-header">
-                <div class="cc-align cc-align_left"><button class="cc-sidebar-button" onclick="toggleSidebar()">
-                    <i class="fa-solid fa-bars"></i></button>
-                </div>
+            <div class="cc-header">
                 <div class="cc-align cc-align_middle">
-                    <nav>
+                    <nav class="cls-nav">
                         <h1 class="cc-club-title">Cowboy Club</h1>
-                    </nav>
+                      </nav>
                 </div>
-                <div class="cc-align cc-align_right">
+                <!-- <div class="cc-align cc-align_right">
                     <div class="cc-login-section">
                         <form id="cc-login-form">
-                            <!-- <input type="text" id="username" name="username" placeholder="Username">
-                        <input type="password" id="password" name="password" placeholder="Password"> -->
+                        <input type="text" id="uname" name="uname" placeholder="Username">
+                        <input type="password" id="pwd" name="pwd" placeholder="Password">
                             <button type="submit">Login</button>
                         </form>
                     </div>
-                </div>
-            </header>
+                </div> -->
+            </div>
 
             <!-- Sidebar funktion -->
-            <aside class="cc-sidebar">
-                <button class="cc-close-button" onclick="toggleSidebar()">&times;</button>
-                <nav class="cc-sidebar-nav">
-                    <ul>
-                        <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    </ul>
-                </nav>
-            </aside>
 
-            <main class="cc-content">
-
+            <!-- <main class="cc-content"> -->
+            <div class="cc-content">
                 <section class="cc-left-section">
                     <div class="cc-text-content">
                         <h2>About Us</h2><br>
@@ -79,28 +70,13 @@ export default function () {
 
 
                 <section class="cc-right-section">
-                    <div class="cc-text-box">
-                        <h1>Upcoming Events</h1><br>
-                        <ul>
-                            <li><strong>Mechanical Bull Riding Competition</strong> - December 15, 6:00 PM<br>
-                                <span class="cc-event-description">Compete and show off your cowboy skills!</span>
-                            </li>
-                            <li><strong>Western Movie Night</strong> - December 20, 7:30 PM<br>
-                                <span class="cc-event-description">Screen classic Western films outdoors.</span>
-                            </li>
-                            <li><strong>Chuckwagon Race</strong> - December 25, 2:00 PM<br>
-                                <span class="cc-event-description">Exciting horse-drawn wagon races.</span>
-                            </li>
-                            <li><strong>Gold Panning</strong> - January 1, 10:00 AM<br>
-                                <span class="cc-event-description">Learn the historic art of panning for gold.</span>
-                            </li>
-                            <li><strong>Sharpshooting Competition</strong> - January 8, 3:45 PM<br>
-                                <span class="cc-event-description">Test your marksmanship skills in shooting contests.</span>
-                            </li>
-                        </ul>
+                    <div class="cowcalendar">
+                        <h1>Upcoming Events</h1>
+                        ${renderEvents_cc(cowboyevent)}
                     </div>
                 </section>
-            </main>
+            </div>
+            <! -- </main> -->
 
 
             <footer class="cc-footer">
@@ -111,9 +87,9 @@ export default function () {
                 </div>
             </footer>
 
-        </body>
+        </div>
 
-        </html>
+        <!-- </html> -->
   
   `;
 }

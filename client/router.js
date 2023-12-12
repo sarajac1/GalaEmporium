@@ -38,7 +38,7 @@ async function router() {
       break
 
     case "#cowboyclub":
-      $('main').html(cowboyclub())
+      $('main').html(await cowboyclub())
       break
 
     default:
