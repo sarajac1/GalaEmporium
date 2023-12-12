@@ -36,12 +36,12 @@ async function login() {
     if (result.visitor != null && result.visitor) {
       $('#login').html(`
       <button onclick="logout()">Logout</button>
-      <button>Add Event</button>
+      <button>Book Event</button>
     `)
     } else {
       $('#login').html(`
       <button onclick="logout()">Logout</button>
-      <button>Book Event</button>
+      <button>Add Event</button>
     `)
     }
   }
