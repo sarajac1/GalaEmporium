@@ -12,6 +12,9 @@ import danceclub from "./pages/danceclub.js"
 import fancyclub from "./pages/fancyclub.js"
 import magicshowclub from "./pages/magicshowclub.js"
 
+//Create event test
+import createEvent from "./pages/createevent.js"
+
 // routed pages
 async function router() {
   switch (location.hash) {
@@ -34,6 +37,10 @@ async function router() {
 
     case "#magicshowclub":
       $('main').html(await magicshowclub())
+      break
+
+    case "#createevent":
+      $('main').html(await createEvent())
       break
 
 
