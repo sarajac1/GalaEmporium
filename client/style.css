@@ -29,6 +29,8 @@ body {
 
 header {
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
