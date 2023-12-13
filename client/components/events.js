@@ -98,3 +98,16 @@ export async function loadEvent_dc() {
   console.log("Log from Dance club", eventsList)
   return eventsList
 }
+
+export function renderEvents_dc(eventsList) {
+  let events = ""
+
+  for (let event of eventsList) {
+    events += `
+      <li>
+          <h2>${event.title}</h2> ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)} <br> ${event.description}          
+      </li>
+    `
+  }
+  return events
+}
