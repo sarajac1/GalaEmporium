@@ -407,6 +407,7 @@ li {
   border-right: none;
 }
 
+
 @media (max-width: 800px) {
   .danceheader{
     padding: 0px;
@@ -460,6 +461,7 @@ li {
     margin-top: 0px;
   }
 }
+
 
 /* Fancy club */
 
