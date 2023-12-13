@@ -114,7 +114,6 @@ export function renderEvents_dc(eventsList) {
 
 // Cowboy Events //
 
-
 export async function loadEvent_cc() {
   const response = await fetch("/api/events/cowboyclub")
   const eventsList = await response.json()
@@ -122,24 +121,20 @@ export async function loadEvent_cc() {
   return eventsList
 }
 
-
 export function renderEvents_cc(eventsList) {
-  let events = ""
+  let events = ""; // Retaining the original variable name
 
-
-  events = '<ul class = "cc-right-section">'
+  events = '<ul class="cc-right-section">';
   for (let event of eventsList) {
     events += `
       <li>
-       <strong>${event.title}</strong>
-       - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}
-      <br>
-      <span class = "cc-event-desciption"> ${event.description} </span>
-
-
+        <strong>${event.title}</strong> - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}
+        <br>
+        <span class="cc-event-description">${event.description}</span>
       </li>
-    `
+    `;
   }
-  events += "</ul>"
-}
+  events += "</ul>";
 
+  return events; // Returning the constructed HTML using the original variable name
+}
