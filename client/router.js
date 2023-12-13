@@ -40,6 +40,10 @@ async function router() {
       $('main').html(await magicshowclub())
       break
 
+    case "#cowboyclub":
+      $('main').html(await cowboyclub())
+      break
+      
     case "#createevent":
       $('main').html(await createEvent())
       break
