@@ -791,6 +791,7 @@ input#password {
 .cc-left-section p,
 .cc-left-section h6 {
   font-size: 16px !important;
+  word-wrap: break-word;
 }
 
 .cc-image-grid {
@@ -801,6 +802,8 @@ input#password {
 
 .cc-image-item {
   width: calc(50% - 5px);
+  max-width: 100%;
+  height: auto;
 }
 
 .cc-single-column {
