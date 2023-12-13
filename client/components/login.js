@@ -1,4 +1,4 @@
-import { loadEvent_ms, loadEvent_vc, loadEvent_fc, loadEvent_dc} from "../components/events.js"
+import { loadEvent_ms, loadEvent_vc, loadEvent_fc, loadEvent_dc } from "../components/events.js"
 
 let user_id = ""
 let clubname = ""
@@ -82,9 +82,9 @@ async function checkLogin() {
 }
 
 checkLogin() // will execute on load
-async function clubOrganiser() {  
-  
-    $('main').html(`
+async function clubOrganiser() {
+
+  $('main').html(`
       
       <div class="bordertext">
  
@@ -115,7 +115,7 @@ async function clubOrganiser() {
      
     </div>
     `)
-  
+
 }
 
 async function addEvent() {
@@ -131,11 +131,11 @@ async function addEvent() {
     "description": description,
     "starts_at": starts_at,
     "ends_at": ends_at,
-    "created_by" : created_by
+    "created_by": created_by
   }
   console.log(JSON.stringify(body))
 
-  if (title!=undefined && title.trim().length > 0) {
+  if (title != undefined && title.trim().length > 0) {
     const response = await fetch("api/events", {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
@@ -146,8 +146,16 @@ async function addEvent() {
     if (result.eventAdded) {
       //alert(`${title.trim()} was added`)
       $('main').html(`
-      <h1>${title.trim()} was added</h1>`)
-      
+      <br>
+      <div class="bordertext">
+      <br>
+        <p><h1>${title.trim()} was successfully created!</h1><br>
+        </p>
+        <br>
+      </div>
+      <br>
+`)
+
     }
   } else {
     alert("Failed to add an event!")
@@ -155,14 +163,14 @@ async function addEvent() {
 }
 
 async function bookEvent() {
-  let events =""
+  let events = ""
   switch (clubname) {
     case "magicshowclub":
       events = await loadEvent_ms()
-      break 
+      break
     case "vampireclub":
       events = await loadEvent_vc()
-      break  
+      break
     case "fancyclub":
       events = await loadEvent_fc()
       break
@@ -171,7 +179,7 @@ async function bookEvent() {
       break
     case "cowboyclub":
       //events = await loadEvent_cc()
-      break    
+      break
   }
   $('main').html(`
       
@@ -206,7 +214,7 @@ async function addEventAttendee(event_id) {
   }
   console.log(JSON.stringify(body))
 
-  if (event_id!=undefined) {
+  if (event_id != undefined) {
     const response = await fetch('/api/events/bookevent', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
@@ -215,7 +223,7 @@ async function addEventAttendee(event_id) {
     const result = await response.json()
 
     if (result.eventBooked) {
-      alert(`Event is booked!`)      
+      alert(`Event is booked!`)
     }
   } else {
     alert("Failed to add an event!")
