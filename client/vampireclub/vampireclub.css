@@ -1,0 +1,80 @@
+/*Vampire Club*/
+
+.vamwrapper {
+  color: antiquewhite;
+  font-family: 'Poiret One';
+  background-color: rgb(0, 0, 0);
+  max-width: 1200px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid #2B2119;
+  padding: 10px;
+}
+
+#vamheader {
+  content: url("img/vamheader.png");
+  width: 100%;
+}
+
+.vamloginform>input {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  font-family: 'Poiret One';
+  color: antiquewhite;
+}
+
+.vamloginform>button {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vamloginform>button:hover {
+  border: 2px solid rgb(147, 147, 147);
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  font-family: 'Poiret One';
+}
+
+.vamcontainer {
+  display: flex;
+  background-color: black;
+}
+
+.vamrow_text {
+  background-color: rgb(0, 0, 0);
+  flex: 50%;
+  height: 400px;
+  overflow: auto;
+  padding-left: 20px;
+}
+
+.vamrow_text::first-letter {
+  initial-letter: 2;
+}
+
+.vamrow_images {
+  background-color: black;
+  flex: 50%;
+
+}
+
+.vamrow_images>img {
+  width: 100%;
+  max-height: 500px;
+  justify-self: right;
+}
+
+.vamcalendar {
+  background-color: antiquewhite;
+  color: #000000;
+  justify-content: center;
+}
+
+.vamcalendarInfo {
+  background-color: rgb(0, 0, 0);
+}

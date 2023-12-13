@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+
+body{
+  padding: 5px; 
+  margin: 5px;
+  max-width: 1200px; 
+  border-style: dotted;
+  border-color: rgb(235, 153, 153);
+
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px; 
+  max-width: 1200px; 
+ 
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: row; 
+}
+
+.intro p{
+  display: flex; 
+  font-family: 'Playpen Sans', cursive;
+  padding: 10px;
+  max-width: 30%;
+  border-style: dotted;
+  margin-right: 5px;
+  border-left: none;
+  border-color:rgb(235, 153, 153);
+  
+}
+
+
+.intro>img{
+  padding: 5px;
+  margin: 5px; 
+  display: flex; 
+  max-width: 50vw;
+
+}
+
+.ballet{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.ballet iframe{
+  width: 100%;
+  height: 400px; 
+}
+
+
