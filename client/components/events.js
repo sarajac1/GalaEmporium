@@ -114,7 +114,6 @@ export function renderEvents_dc(eventsList) {
 
 // Cowboy Events //
 
-
 export async function loadEvent_cc() {
   const response = await fetch("/api/events/cowboyclub")
   const eventsList = await response.json()
@@ -122,10 +121,8 @@ export async function loadEvent_cc() {
   return eventsList
 }
 
-
 export function renderEvents_cc(eventsList) {
-  let events = ""; 
-
+  let events = "";
   events = '<ul class="cc-right-section">';
   for (let event of eventsList) {
     events += `
@@ -139,4 +136,3 @@ export function renderEvents_cc(eventsList) {
   events += "</ul>";
   return events;
 }
-
