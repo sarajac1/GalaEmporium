@@ -136,5 +136,5 @@ export function renderEvents_cc(eventsList) {
   }
   events += "</ul>";
 
-  return events; // Returning the constructed HTML using the original variable name
+  return events;
 }
