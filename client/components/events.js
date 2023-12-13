@@ -111,3 +111,35 @@ export function renderEvents_dc(eventsList) {
   }
   return events
 }
+
+// Cowboy Events //
+
+
+export async function loadEvent_cc() {
+  const response = await fetch("/api/events/cowboyclub")
+  const eventsList = await response.json()
+  console.log("Log from Cowboy Club", eventsList)
+  return eventsList
+}
+
+
+export function renderEvents_cc(eventsList) {
+  let events = ""
+
+
+  events = '<ul class = "cc-right-section">'
+  for (let event of eventsList) {
+    events += `
+      <li>
+       <strong>${event.title}</strong>
+       - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}
+      <br>
+      <span class = "cc-event-desciption"> ${event.description} </span>
+
+
+      </li>
+    `
+  }
+  events += "</ul>"
+}
+

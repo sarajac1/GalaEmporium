@@ -42,9 +42,8 @@ export default async function home() {
           </div>
 
           <div class="borderimg">
-            <a class="fancy-club" href="#fancyclub">
-              <img src="https://cdn.vox-cdn.com/thumbor/V0iHI3a8eg77wf87m7HYKl1zQCU=/0x0:2400x1602/920x0/filters:focal(0x0:2400x1602):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/24575363/PearlClubInteriors_digital_6817.jpg" alt="">Our web platform serves as a portal to the dynamic
-              world of live entertainment.
+            <a class="cowboy-club" href="cowboy/cowboy.html">
+              <img src="img/cowboylogo.png" alt="cowboylogo">Our web platform serves as a portal to the dynamic
             </a>
           </div>
 

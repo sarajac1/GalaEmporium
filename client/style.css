@@ -182,6 +182,10 @@ li{
   width: 100%;
 }
 
+.cowboy-club img {
+  width: 100%;
+}
+
 
 
 
@@ -699,4 +703,152 @@ input#password {
   color: blanchedalmond;
   font-family: serif;
   font-style: italic;
+}
+
+/* Cowboy Club */
+
+.cc-body>* {
+  margin: 0;
+  padding: 0;
+}
+
+.cc-body {
+  background-color: #f4e1d2;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.cc-header {
+  background-color: #8d6e63;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+/* sidebar button (left), club-title (center), login (right) --> https://stackoverflow.com/a/66266946*/
+.cc-align {
+  flex: 50px;
+}
+
+.cls-nav {
+  background-color: #8d6e63;
+  height: 120px;
+}
+
+.cc-align_middle {
+  align-self: center;
+  text-align: center;
+  top: -80px
+}
+
+.cc-align_right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cc-club-title {
+  font-family: 'Rye', cursive;
+  font-weight: normal;
+  font-size: 72px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.cc-content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.cc-left-section,
+.cc-right-section,
+.cc-middle-section {
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px;
+  color: #5d4037;
+  padding: 20px;
+  background-color: #e0c9b8;
+  /* flex: 1 0 0; */
+  margin-bottom: 20px;
+}
+
+.cc-left-section h2,
+.cc-right-section h1 {
+  font-size: 28px;
+  font-family: 'Wellfleet', cursive;
+  color: #8d6e63;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.cc-left-section p,
+.cc-left-section h6 {
+  font-size: 16px !important;
+  word-wrap: break-word;
+}
+
+.cc-image-grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.cc-image-item {
+  width: calc(50% - 5px);
+  max-width: 100%;
+  height: auto;
+}
+
+.cc-single-column {
+  width: 100%;
+}
+
+.cc-image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cc-right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cc-right-section ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #5d4037;
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+.cc-footer {
+  position: relative;
+  width: auto;
+  background-color: #8d6e63;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  min-height: 55px;
+}
+
+.cc-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cc-copyright {
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px
 }

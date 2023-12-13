@@ -11,6 +11,7 @@ import vampireclub from "./pages/vampireclub.js"
 import danceclub from "./pages/danceclub.js"
 import fancyclub from "./pages/fancyclub.js"
 import magicshowclub from "./pages/magicshowclub.js"
+import cowboyclub from "./pages/cowboy.js"
 
 
 
@@ -36,6 +37,14 @@ async function router() {
 
     case "#magicshowclub":
       $('main').html(await magicshowclub())
+      break
+
+    case "#cowboyclub":
+      $('main').html(await cowboyclub())
+      break
+
+    case "#createevent":
+      $('main').html(await createEvent())
       break
 
     default:

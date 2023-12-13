@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cc-body {
+  background-color: #f4e1d2;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cc-header {
+  background-color: #8d6e63;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+/* sidebar button (left), club-title (center), login (right) --> https://stackoverflow.com/a/66266946*/
+.cc-align {
+  flex: 50px;
+}
+
+.cc-align_left {
+  text-align: left;
+}
+
+.cc-align_middle {
+  align-self: center;
+  text-align: center;
+}
+
+.cc-align_right {
+  text-align: right;
+}
+
+.cc-sidebar-button {
+  vertical-align: bottom;
+}
+
+.cc-club-title {
+  font-family: 'Rye', cursive;
+  font-weight: normal;
+  font-size: 48px;
+
+  white-space: nowrap;
+}
+
+.cc-login-section {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+#cc-login-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #5d4037;
+  font-family: 'Wellfleet', cursive;
+  font-size: 12px;
+}
+
+#cc-login-form button {
+  padding: 8px 15px;
+  background-color: #5d4037;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Wellfleet', cursive;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#cc-login-form button:hover {
+  background-color: #6d4c41;
+  transform: scale(1.05);
+}
+
+.cc-main {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.cc-main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cc-content>* {
+  flex: 1 100%;
+}
+
+.cc-content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.cc-left-section,
+.cc-right-section,
+.cc-middle-section {
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px;
+  color: #5d4037;
+  padding: 20px;
+  background-color: #e0c9b8;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.cc-left-section h2,
+.cc-right-section h1 {
+  font-size: 28px;
+  font-family: 'Wellfleet', cursive;
+  color: #8d6e63;
+  text-align: center;
+}
+
+.cc-left-section p,
+.cc-left-section h6 {
+  font-size: 16px !important;
+}
+
+.cc-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cc-image-item {
+  width: 48%;
+}
+
+.cc-single-column {
+  width: 100%;
+}
+
+.cc-image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.cc-right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cc-right-section ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #5d4037;
+  padding-bottom: 10px;
+}
+
+/* SIDEBAR*/
+
+.cc-sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #8d6e63;
+  transition: left 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.cc-sidebar-open {
+  left: 0;
+  border-right: 2px solid #6d4c41;
+}
+
+.cc-sidebar-nav {
+  padding: 20px;
+}
+
+.cc-sidebar-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Wellfleet', cursive;
+  font-size: 24px;
+}
+
+.cc-sidebar-open .cc-sidebar-nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.cc-sidebar-button {
+  border: none;
+  text-align: left;
+}
+
+.cc-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-size: 28px;
+}
+
+.cc-sidebar-button,
+.cc-close-button {
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.cc-sidebar-button:hover,
+.cc-close-button:hover {
+  background-color: #6d4c41;
+}
+
+/* FOOTER */
+.cc-footer {
+  position: relative;
+  width: 100%;
+  background-color: #8d6e63;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  min-height: 55px;
+}
+
+.cc-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cc-copyright {
+  font-family: 'Wellfleet', cursive;
+  font-size: 16px
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+  .cc-club-title {
+    font-size: 64px;
+  }
+
+  .cc-text-content h2 {
+    font-size: 28px;
+  }
+
+  .cc-text-content p {
+    font-size: 18px;
+  }
+
+  .cc-sidebar {
+    width: 250px;
+  }
+
+  .cc-sidebar-open {
+    left: 0;
+  }
+
+  .cc-left-section {
+    flex: 1 0 0;
+  }
+
+  .cc-middle-section {
+    flex: 1 0 0;
+  }
+
+  .cc-right-section {
+    flex: 1 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   .cc-club-title {
+    font-size: 36px;
+  } 
+
+  .cc-text-content h2 {
+    font-size: 22px;
+  }
+
+  .cc-text-content p {
+    font-size: 16px;
+  }
+
+  .cc-sidebar {
+    width: 200px;
+  }
+
+  .cc-sidebar-open {
+    left: -200px;
+  }
+
+  .cc-sidebar-nav ul li a {
+    font-size: 18px;
+  }
+}
+
+.cowboy-club img {
+  width: 100%;
+}
