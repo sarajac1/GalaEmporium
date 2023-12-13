@@ -308,7 +308,7 @@ main {
 }
 
 .danceheader>img {
-  width: 875px;
+  max-width: 875px;
 }
 
 .intro {

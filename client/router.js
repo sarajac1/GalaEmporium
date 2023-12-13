@@ -23,7 +23,7 @@ async function router() {
       break
 
     case "#danceclub":
-      $('main').html(danceclub())
+      $('main').html(await danceclub())
       break
 
     case "#vampireclub":
