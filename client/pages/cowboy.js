@@ -3,25 +3,15 @@ export default async function () {
     const cowboyevent = await loadEvent_cc();
     return `
 
-
         <div class="cc-body">
-
-
             <div class="cc-header">
                 <div class="cc-align cc-align_middle">
                     <nav class="cls-nav">
                         <h1 class="cc-club-title">Cowboy Club</h1>
                     </nav>
                 </div>
-                <!-- <div class="cc-align cc-align_right">
-                </div> -->
             </div>
-
-
-            <!-- Sidebar funktion -->
-
-
-            <!-- <main class="cc-content"> -->
+            
             <div class="cc-content">
                 <section class="cc-left-section">
                     <div class="cc-text-content">
@@ -53,7 +43,6 @@ export default async function () {
                     </div>
                 </section>
 
-
                 <section class="cc-middle-section">
                     <div class="cc-middle-content">
                         <div class="cc-image-grid">
@@ -70,9 +59,6 @@ export default async function () {
                     </div>
                 </section>
 
-
-
-
                 <section class="cc-right-section">
                     <div class="cowcalendar">
                         <h1>Upcoming Events</h1>
@@ -80,10 +66,6 @@ export default async function () {
                     </div>
                 </section>
             </div>
-            <!-- </main> -->
-
-
-
 
             <footer class="cc-footer">
                 <div class="cc-footer-content">
