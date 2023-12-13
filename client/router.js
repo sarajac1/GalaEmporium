@@ -13,8 +13,7 @@ import fancyclub from "./pages/fancyclub.js"
 import magicshowclub from "./pages/magicshowclub.js"
 import cowboyclub from "./pages/cowboy.js"
 
-//Create event test
-import createEvent from "./pages/createevent.js"
+
 
 // routed pages
 async function router() {
@@ -25,7 +24,7 @@ async function router() {
       break
 
     case "#danceclub":
-      $('main').html(danceclub())
+      $('main').html(await danceclub())
       break
 
     case "#vampireclub":
@@ -43,11 +42,10 @@ async function router() {
     case "#cowboyclub":
       $('main').html(await cowboyclub())
       break
-      
+
     case "#createevent":
       $('main').html(await createEvent())
       break
-
 
     default:
       $('main').html(`<h2><strong>404</strong> Good job! You've broken the internet.</h2>`)

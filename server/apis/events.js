@@ -15,11 +15,11 @@ export default function (server, db) {
   // Add new event
   server.post('/api/events', async (req, res) => {
     const title = req.body.title.trim()
-    const description = 'test' //req.body.description
-    const starts_at = '2024-01-01 10:00:00'//req.body.starts_at
-    const ends_at = '2024-01-01 10:00:00' //req.body.ends_at
-    const created_by = '1' //req.body.created_by
-    const club_name = 'vampireclub'//req.body.club_name
+    const description = req.body.description
+    const starts_at = req.body.starts_at
+    const ends_at = req.body.ends_at
+    const created_by = req.body.created_by
+    const club_name = req.body.club_name
 
     if (req.body.title.trim().length > 0) {
       const result = await db.query("INSERT INTO events (title, description, starts_at, ends_at," +
@@ -38,7 +38,6 @@ export default function (server, db) {
   server.post('/api/events/bookevent', async (req, res) => {
     const event_id = req.body.event_id
     const user_id = req.body.user_id
-
     if (req.body.event_id != null) {
       const result = await db.query("INSERT INTO event_attendees (event_id, user_id) VALUES (?, ?)",
         [event_id, user_id])
