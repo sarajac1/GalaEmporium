@@ -1,4 +1,4 @@
-import { loadEvent_ms, loadEvent_vc, loadEvent_fc, loadEvent_dc } from "../components/events.js"
+import { loadEvent_ms, loadEvent_vc, loadEvent_fc, loadEvent_dc, loadEvent_cc} from "../components/events.js"
 
 let user_id = ""
 let clubname = ""
@@ -179,7 +179,7 @@ async function bookEvent() {
       events = await loadEvent_dc()
       break
     case "cowboyclub":
-      //events = await loadEvent_cc()
+      events = await loadEvent_cc()
       break
   }
   $('main').html(`

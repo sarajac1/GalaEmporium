@@ -136,3 +136,4 @@ export function renderEvents_cc(eventsList) {
   events += "</ul>";
   return events;
 }
+
