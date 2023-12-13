@@ -3,7 +3,9 @@ export default async function () {
     const cowboyevent = await loadEvent_cc();
     return `
 
+
         <div class="cc-body">
+
 
             <div class="cc-header">
                 <div class="cc-align cc-align_middle">
@@ -15,7 +17,9 @@ export default async function () {
                 </div> -->
             </div>
 
+
             <!-- Sidebar funktion -->
+
 
             <!-- <main class="cc-content"> -->
             <div class="cc-content">
@@ -26,6 +30,7 @@ export default async function () {
                             the spirit
                             of rugged adventure, where the echoes of frontier tales resonate through every trail we blaze.<br><br>
 
+
                             Experience the thrill of authentic cowboy life with our range of activities, from horseback riding through
                             scenic
                             landscapes to mastering the art of lassoing and honing your sharpshooting skills. Our seasoned guides share
@@ -33,17 +38,21 @@ export default async function () {
                             extensive knowledge of the West, regaling you with tales of outlaws, gold rushes, and the untamed
                             wilderness.<br><br>
 
+
                             Immerse yourself in our themed events that transport you back to the days of saloons and showdowns, offering a
                             chance to
                             revel in the camaraderie of fellow enthusiasts. Capture these moments forever in our gallery, showcasing
                             stunning
                             visuals and stories from our adventures.<br><br>
 
+
                             Join Cowboy Club, where the frontier spirit lives on, and the Wild West becomes your playground.<br><br>
+
 
                             Saddle up, partners! Adventure awaits.</p>
                     </div>
                 </section>
+
 
                 <section class="cc-middle-section">
                     <div class="cc-middle-content">
@@ -62,6 +71,8 @@ export default async function () {
                 </section>
 
 
+
+
                 <section class="cc-right-section">
                     <div class="cowcalendar">
                         <h1>Upcoming Events</h1>
@@ -72,6 +83,8 @@ export default async function () {
             <!-- </main> -->
 
 
+
+
             <footer class="cc-footer">
                 <div class="cc-footer-content">
                     <div class="cc-copyright">
@@ -80,9 +93,10 @@ export default async function () {
                 </div>
             </footer>
 
-        </div>
 
-        <!-- </html> -->
-  
+        </div>
   `;
 }
+
+
+
