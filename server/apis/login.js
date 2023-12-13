@@ -17,13 +17,14 @@ export default function (server, db) {
     if (users[0]) {
       req.session.user = users[0]
       let userId = users[0].id
+      let clubname = await db.query("SELECT * FROM clubs WHERE id = ?", [users[0].club])
       //res.json({ loggedIn: true })
       
       const clubOrganiser = await db.query("SELECT * FROM clubs WHERE admin = ?", [users[0].id])
       if (clubOrganiser[0]) {
-        res.json({ visitor: false, loggedIn: true, id:userId})
+        res.json({ visitor: false, loggedIn: true, id:userId, clubname:clubname[0].club_name})
       } else {
-            res.json({visitor: true, loggedIn: true, id:userId})
+            res.json({visitor: true, loggedIn: true, id:userId, clubname:clubname[0].club_name})
       }
 
     }else{

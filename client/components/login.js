@@ -1,4 +1,7 @@
+import { loadEvent_ms, loadEvent_vc, loadEvent_fc, loadEvent_dc} from "../components/events.js"
+
 let user_id = ""
+let clubname = ""
 
 export default function init() {
   return `
@@ -36,10 +39,11 @@ async function login() {
   console.log(result)
   if (result.loggedIn) {
     user_id = result.id
+    clubname = result.clubname
     if (result.visitor != null && result.visitor) {
       $('#login').html(`
       <button onclick="logout()">Logout</button>
-      <button>Book Event</button>
+      <button onclick="bookEvent()">Book Event</button>
     `)
     } else {
       $('#login').html(`
@@ -150,6 +154,75 @@ async function addEvent() {
   }
 }
 
-window.addEvent = addEvent
-window.clubOrganiser= clubOrganiser
+async function bookEvent() {
+  let events =""
+  switch (clubname) {
+    case "magicshowclub":
+      events = await loadEvent_ms()
+      break 
+    case "vampireclub":
+      events = await loadEvent_vc()
+      break  
+    case "fancyclub":
+      events = await loadEvent_fc()
+      break
+    case "danceclub":
+      events = await loadEvent_dc()
+      break
+    case "cowboyclub":
+      //events = await loadEvent_cc()
+      break    
+  }
+  $('main').html(`
+      
+      <div class="bordertext">
+ 
+            <h1>Book Event</h1> <br>
+            <h3>Club Name: ${clubname}</h3>
+            <ul>
+            ${renderEvents(events)}
+            </ul>
+            
+      `)
+}
 
+function renderEvents(eventsList) {
+  let events = ""
+  for (let event of eventsList) {
+    events += `
+      <li>
+          ${event.title} - ${event.description} - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}          
+          <button id="${event.id}" onclick="addEventAttendee(${event.id})">Book</button>
+      </li>
+    `
+  }
+  return events
+}
+
+async function addEventAttendee(event_id) {
+  const body = {
+    "event_id": event_id,
+    "user_id": user_id
+  }
+  console.log(JSON.stringify(body))
+
+  if (event_id!=undefined) {
+    const response = await fetch('/api/events/bookevent', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    })
+    const result = await response.json()
+
+    if (result.eventBooked) {
+      alert(`Event is booked!`)      
+    }
+  } else {
+    alert("Failed to add an event!")
+  }
+}
+
+window.addEvent = addEvent
+window.clubOrganiser = clubOrganiser
+window.bookEvent = bookEvent
+window.addEventAttendee = addEventAttendee

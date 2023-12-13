@@ -89,3 +89,12 @@ export function renderEvents_fc(eventsList) {
   }
   return events
 }
+
+// dance club
+
+export async function loadEvent_dc() {
+  const response = await fetch("/api/events/danceclub")
+  const eventsList = await response.json()
+  console.log("Log from Dance club", eventsList)
+  return eventsList
+}

@@ -38,7 +38,6 @@ export default function (server, db) {
   server.post('/api/events/bookevent', async (req, res) => {
     const event_id = req.body.event_id
     const user_id = req.body.user_id
-
     if (req.body.event_id != null) {
       const result = await db.query("INSERT INTO event_attendees (event_id, user_id) VALUES (?, ?)",
         [event_id, user_id])
