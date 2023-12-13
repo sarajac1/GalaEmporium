@@ -11,7 +11,7 @@ export default async function () {
     movement becomes poetry, and every performance is a celebration of rhythm and expression. <br> Dance Stage is more than
     a club; it's a dance sanctuary where the stage comes alive with a symphony of motion and emotion. <br>
   <br> Get your tickets today! </p>
-  <img src="../img/dancers.jpeg" alt=""></div>
+  <img class="intro_image" src="../img/dancers.jpeg" alt=""></div>
 
    
 
