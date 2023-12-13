@@ -28,7 +28,7 @@ export default async function () {
             <div class="cc-content">
                 <section class="cc-left-section">
                     <div class="cc-text-content">
-                        <h2>About Us</h2><br>
+                        <h2>About Us</h2>
                         <p>Saddle up and join us for an exhilarating journey into the heart of the Old West. At Cowboy Club, we embody
                             the spirit
                             of rugged adventure, where the echoes of frontier tales resonate through every trail we blaze.<br><br>
