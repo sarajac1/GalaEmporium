@@ -27,8 +27,10 @@ body {
   flex-direction: column;
 }
 
-header{
+header {
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
@@ -39,7 +41,7 @@ header{
   object-fit: cover;
 }
 
-.header_photo{
+.header_photo {
   width: 100%;
 }
 
@@ -157,12 +159,12 @@ main {
   list-style-type: none;
 }
 
-li h2{
+li h2 {
   margin: 0px 0px 20px 0px;
 
 }
 
-li{
+li {
   margin-bottom: 20px;
 }
 
@@ -195,9 +197,8 @@ li{
   color: antiquewhite;
   font-family: 'Poiret One';
   background-color: rgb(0, 0, 0);
-  max-width: 875px;
   margin: auto;
-  width: 100%;
+  width: calc(100% - 26px);
   border: 3px solid #2B2119;
   padding: 10px;
 }
@@ -297,12 +298,11 @@ li{
 
 .dancebody {
   padding: 5px;
-  max-width: 900px;
   background-color: white;
   border-color: rgb(235, 153, 153);
   border-style: solid;
   border-bottom: none;
-
+  width: calc(100% - 16px);
 }
 
 .danceheader {
@@ -400,6 +400,8 @@ li{
   border-right: none;
 }
 
+@media (max-width: 800px) {}
+
 /* Fancy club */
 
 #fancy_club.body {
@@ -435,32 +437,6 @@ li{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-#fancy_club.login_form {
-  background-color: lightgray;
-  border-radius: 5px;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-  margin-bottom: 40px;
-}
-
-input#username {
-  width: 50%;
-}
-
-input#password {
-  width: 50%;
-}
-
-#fancy_club.login_h2 {
-  margin: 16px 0px 16px 0px;
-  color: black;
 }
 
 #fancy_club.form {
@@ -503,11 +479,12 @@ input#password {
 
 #fancy_club.club_info {
   text-align: center;
-  width: 100%;
+  width: 70%;
   background-color: lightgray;
   border-radius: 5px;
   color: black;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 #fancy_club.club_info h2 {
@@ -522,7 +499,7 @@ input#password {
 
 #fancy_club.calendar {
   text-align: center;
-  width: 40%;
+  width: 70%;
   background-color: lightgray;
   color: black;
   border-radius: 5px;
@@ -640,16 +617,10 @@ input#password {
 
 .ms-middle {
   background: url("./img/backgroundPic.jpg");
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 70%;
 }
 
 .ms-middlediv {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   color: blanchedalmond;
   text-align: center;
   margin-left: 5px;
@@ -659,8 +630,6 @@ input#password {
 
 .ms-aside {
   width: 30%;
-  flex-wrap: wrap;
-  flex-direction: row;
   color: blanchedalmond;
   text-align: center;
   margin-left: 0px;
@@ -705,6 +674,21 @@ input#password {
   font-style: italic;
 }
 
+@media (max-width: 800px) {
+  .ms-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ms-middle {
+    width: 100%;
+  }
+
+  .ms-aside {
+    width: 100%;
+  }
+}
+
 /* Cowboy Club */
 
 .cc-body>* {
@@ -735,7 +719,7 @@ input#password {
 
 .cls-nav {
   background-color: #8d6e63;
-  height: 120px;
+  height: auto;
 }
 
 .cc-align_middle {
@@ -754,7 +738,7 @@ input#password {
   font-weight: normal;
   font-size: 72px;
   white-space: nowrap;
-  margin-top: 10px;
+  margin: 10px 0px 10px 0px;
 }
 
 .cc-content {
@@ -851,4 +835,20 @@ input#password {
 .cc-copyright {
   font-family: 'Wellfleet', cursive;
   font-size: 16px
+}
+
+@media (max-width: 800px) {
+  .cls-nav {
+    background-color: #8d6e63;
+    width: 100%;
+  }
+
+  .cc-club-title {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .cc-header {
+    margin-bottom: 20px;
+  }
 }
