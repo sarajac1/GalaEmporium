@@ -9,16 +9,9 @@ export default async function () {
                 <div class="cc-align cc-align_middle">
                     <nav class="cls-nav">
                         <h1 class="cc-club-title">Cowboy Club</h1>
-                      </nav>
+                    </nav>
                 </div>
                 <!-- <div class="cc-align cc-align_right">
-                    <div class="cc-login-section">
-                        <form id="cc-login-form">
-                        <input type="text" id="uname" name="uname" placeholder="Username">
-                        <input type="password" id="pwd" name="pwd" placeholder="Password">
-                            <button type="submit">Login</button>
-                        </form>
-                    </div>
                 </div> -->
             </div>
 
