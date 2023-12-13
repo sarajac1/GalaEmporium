@@ -43,7 +43,7 @@ export default async function home() {
 
           <div class="borderimg">
             <a class="cowboy-club" href="cowboy/cowboy.html">
-              <img src="img/cowboylogo.png" alt="cowboylogo">Our web platform serves as a portal to the dynamic
+              <img src="img/cowboylogo.png" alt="cowboylogo">Cowboy Club
             </a>
           </div>
 
