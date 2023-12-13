@@ -14,23 +14,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin: 0px;
 }
 
 #container {
   border-style: solid;
   border-color: #000000;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+header{
+  width: 70%;
+}
 
 #header {
   text-align: center;
   background: white;
-  width: 100%;
-  content: url(img/header.jpg);
-  max-width: 900px;
-  object-fit: cover;
+  width: 70%;
 
+  object-fit: cover;
+}
+
+.header_photo{
+  width: 100%;
 }
 
 #login-background {
@@ -59,8 +69,7 @@ footer {
   padding-top: 8px;
   padding-bottom: 8px;
   color: white;
-  max-width: 900px;
-  width: 900px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   font-size: medium;
@@ -72,8 +81,7 @@ nav {
   padding-top: 8px;
   padding-bottom: 8px;
   color: white;
-  max-width: 900px;
-  width: 900px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   font-size: medium;
@@ -96,8 +104,11 @@ a:hover {
 main {
   background-color: #A4B2D4;
   color: white;
-  max-width: 900px;
-  width: 900px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -105,8 +116,7 @@ main {
   border-radius: 10px;
   background: #39445F;
   padding: 10px;
-  width: 600px;
-  margin: auto;
+  margin-top: 20px;
 }
 
 #threeColumns {
@@ -117,52 +127,43 @@ main {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.borderimg {
-  flex: 0 0 30%;
-  border-radius: 10px;
-  background: #39445F;
-  padding: 10px;
-  max-width: 200px;
+  justify-content: space-evenly;
 }
 
 .borderimg {
   border-radius: 10px;
   background: #39445F;
   padding: 10px;
-  margin: auto;
-  max-width: 200px;
-
 }
 
-.borderimg>img {
+.borderimg {
+  border-radius: 10px;
+  background: #39445F;
+  padding: 10px;
   max-width: 200px;
+  margin: 10px 0px 10px 0px;
 }
+
+
 
 .calendar {
   border-radius: 10px;
   background: #39445F;
-  padding: 10px;
-  width: 800px;
-  margin: auto;
+  width: calc(100% - 20px);
   display: flex;
+  padding: 20px;
+  list-style-type: none;
 }
 
-#calendar {
-  flex: 60%;
-  background-color: aliceblue;
+li h2{
+  margin: 0px 0px 20px 0px;
+
 }
 
-#bookingText {
-  flex: 40%;
-
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+li{
+  margin-bottom: 20px;
 }
 
 .magic-show img {
