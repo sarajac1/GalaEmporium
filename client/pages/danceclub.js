@@ -3,7 +3,7 @@ export default async function () {
   const danceevent = await loadEvent_dc();
   return `
 <div class="dancebody">
-  <div class="danceheader"><img src="../client/img/Danceclub.png" alt=""></div>
+  <div class="danceheader"><img src="../img/Danceclub.png" alt=""></div>
 
   <div id="dancewrapper">
   <div class="intro"><p>
@@ -11,7 +11,7 @@ export default async function () {
     movement becomes poetry, and every performance is a celebration of rhythm and expression. <br> Dance Stage is more than
     a club; it's a dance sanctuary where the stage comes alive with a symphony of motion and emotion. <br>
   <br> Get your tickets today! </p>
-  <img src="../client/img/dancers.jpeg" alt=""></div>
+  <img src="../img/dancers.jpeg" alt=""></div>
 
    
 
