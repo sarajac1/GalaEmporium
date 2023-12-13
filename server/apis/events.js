@@ -19,7 +19,7 @@ export default function (server, db) {
     const starts_at = req.body.starts_at
     const ends_at = req.body.ends_at
     const created_by = req.body.created_by
-    const club_name = req.body.club_name
+    const club_name = req.body.club_name // this should be changed
 
     if (req.body.title.trim().length > 0) {
       const result = await db.query("INSERT INTO events (title, description, starts_at, ends_at," +

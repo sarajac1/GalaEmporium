@@ -70,7 +70,6 @@ async function logout() {
 
 window.logout = logout
 
-
 async function checkLogin() {
   const response = await fetch('/api/login')
   const result = await response.json()
@@ -82,8 +81,29 @@ async function checkLogin() {
   }
 }
 
+
+
 checkLogin() // will execute on load
 async function clubOrganiser() {
+  let current_club = "";
+
+  switch (clubname) {
+    case 'vampireclub':
+      current_club = "Vampire Club";
+      break;
+    case 'magicclub':
+      current_club = "Magic Club";
+      break;
+    case 'danceclub':
+      current_club = "Dance Club";
+      break;
+    case 'cowboyclub':
+      current_club = "Cowboy Club";
+      break;
+    case 'fancyclub':
+      current_club = "Fancy Club";
+      break;
+  }
 
   $('main').html(`
       
@@ -91,23 +111,12 @@ async function clubOrganiser() {
  
             <h1>Create Event</h1> <br>
       <h4>Club Name</h4>
-
-      <input type="radio" id="vampireclub" name="clubs" value="vampireclub"/>
-<label for="vampireclub">Vampire Club</label><br>
-      <input type="radio" id="magicshowclub" name="clubs" value="magicshowclub"/>
-<label for="magicshowclub">Magic Show Club</label><br>
-      <input type="radio" id="danceclub" name="clubs" value="danceclub"/>
-<label for="danceclub">Dance Club</label><br>
-      <input type="radio" id="fancyclub" name="clubs" value="fancyclub"/>
-<label for="fancyclub">Fancy Club</label><br>
-      <input type="radio" id="cowboyclub" name="clubs" value="cowboyclub"/>
-<label for="cowboyclub">Cowboy Club</label><br>
-    
+          You are making a new event for the  ${current_club}    
+   
       <h4>Event Title</h4>
-      <input type="text" id="eventTitle" name="eventTitle" value="default title">
+      <input type="text" id="eventTitle" name="eventTitle" value="Event title">
       <h4>Event Description</h4>
-      <textarea id="eventDescription" name="eventDescription" rows="4" cols="50">
-      Here is some default text</textarea>
+      <textarea id="eventDescription" name="eventDescription" rows="4" cols="50"> Add description to your event</textarea>
       <h4>Starts at:</h4>
       <input type="datetime-local" id="startsAt" name="startsAt">
       <h4>Ends at:</h4>
@@ -120,7 +129,7 @@ async function clubOrganiser() {
 }
 
 async function addEvent() {
-  const club_name = $("[name=clubs]:checked").val()
+  const club_name = clubname
   const title = $("[name=eventTitle]").val()
   const description = $("[name=eventDescription]").val()
   const starts_at = $("[name=startsAt]").val()
