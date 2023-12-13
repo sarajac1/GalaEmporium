@@ -23,7 +23,7 @@ export default async function () {
       </div>
 
   <div class="ballet">
-    <iframe src="https://www.youtube.com/embed/0GsajWIF3ws"
+    <iframe src="https://www.youtube.com/embed/0GsajWIF3ws?mute=1&autoplay=1"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe></div>
