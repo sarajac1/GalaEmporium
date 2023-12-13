@@ -174,17 +174,22 @@ async function addEvent() {
 
 async function bookEvent() {
   let events = ""
+  let current_club = ""
   switch (clubname) {
     case "magicshowclub":
+      current_club = "Magic Show Club"
       events = await loadEvent_ms()
       break
     case "vampireclub":
+      current_club = "Vampire Club"
       events = await loadEvent_vc()
       break
     case "fancyclub":
+      current_club = "Fancy Club"
       events = await loadEvent_fc()
       break
     case "danceclub":
+      current_club = "Dance Club"
       events = await loadEvent_dc()
       break
     case "cowboyclub":
@@ -196,7 +201,7 @@ async function bookEvent() {
       <div class="bordertext">
  
             <h1>Book Event</h1> <br>
-            <h3>Club Name: ${clubname}</h3>
+            <h3>You are seeing events for the ${current_club}</h3>
             <ul>
             ${renderEvents(events)}
             </ul>
@@ -208,10 +213,11 @@ function renderEvents(eventsList) {
   let events = ""
   for (let event of eventsList) {
     events += `
-      <li>
-          ${event.title} - ${event.description} - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}          
-          <button id="${event.id}" onclick="addEventAttendee(${event.id})">Book</button>
+      <li style="list-style-type: none;">
+          <h2>${event.title}</h2> ${event.description} - ${event.starts_at.substring(0, 16).replace('T', ' from ')} to ${event.ends_at.substring(11, 16)}          
+          <br><button id="${event.id}" onclick="addEventAttendee(${event.id})">Book Event</button>
       </li>
+      <hr>
     `
   }
   return events
