@@ -48,7 +48,8 @@ async function login() {
     } else {
       $('#login').html(`
       <button onclick="logout()">Logout</button>      
-      <button onclick="clubOrganiser()">Add Event</button>      
+      <button onclick="clubOrganiser()">Add Event</button>
+      <button onclick="bookEvent()">Book Event</button>      
     `)
     }
   }
