@@ -122,8 +122,7 @@ export async function loadEvent_cc() {
 }
 
 export function renderEvents_cc(eventsList) {
-  let events = ""; // Retaining the original variable name
-
+  let events = "";
   events = '<ul class="cc-right-section">';
   for (let event of eventsList) {
     events += `
@@ -135,6 +134,5 @@ export function renderEvents_cc(eventsList) {
     `;
   }
   events += "</ul>";
-
   return events;
 }

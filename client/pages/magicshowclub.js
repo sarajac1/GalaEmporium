@@ -1,7 +1,7 @@
 import { loadEvent_ms, renderEvents_ms } from "../components/events.js"
 export default async function () {
   const magicshowevents = await loadEvent_ms();
-  
+
   return ` 
 
 <div class="ms-main">
@@ -15,32 +15,32 @@ export default async function () {
 
           <div class="ms-image-section">
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic1.jpg">
+              <img class="ms-img" src="./img/Pic1.jpg">
               <p>Great Magic Show</p>
             </section>
 
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic2.jpg">
+              <img class="ms-img" src="./img/Pic2.jpg">
               <p>The Magician</p>
             </section>
 
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic3.jpg">
+              <img class="ms-img" src="./img/Pic3.jpg">
               <p>Best entertainment for kids</p>
             </section>
 
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic4.jpg">
+              <img class="ms-img" src="./img/Pic4.jpg">
               <p>Magic inside the Hat </p>
             </section>
 
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic5.jpg">
+              <img class="ms-img" src="./img/Pic5.jpg">
               <p>Master of Magicians</p>
             </section>
 
             <section>
-              <img class="ms-img" src="./magicShowClub/Pic6.jpg">
+              <img class="ms-img" src="./img/Pic6.jpg">
               <p>Play more with Playing Cards</p>
             </section>
             </div>

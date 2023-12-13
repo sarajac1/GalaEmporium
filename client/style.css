@@ -539,16 +539,16 @@ input#password {
   margin: 20px 0px 20px 0px;
 }
 
-#fancy_club.calendar h2{
+#fancy_club.calendar h2 {
   margin: 0px;
 }
 
-#fancy_club.heading_1{
+#fancy_club.heading_1 {
   margin: 8px;
   font-size: 30px;
 }
 
-#fancy_club.fc-ul{
+#fancy_club.fc-ul {
   margin: 0px;
   padding: 10px 10px 10px 35px;
 }
@@ -635,11 +635,11 @@ input#password {
 
 .ms-main {
   display: flex;
-  background: url("./magicShowClub/backgroundPic.jpg");
+  background: url("./img/backgroundPic.jpg");
 }
 
 .ms-middle {
-  background: url("./magicShowClub/backgroundPic.jpg");
+  background: url("./img/backgroundPic.jpg");
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

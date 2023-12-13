@@ -43,7 +43,7 @@ export default async function home() {
 
           <div class="borderimg">
             <a class="cowboy-club" href="#cowboyclub">
-              <img src="img/cowboylogo.png" alt="cowboylogo"> Cowboy Club
+              <img src="img/cowboylogo.png" alt="cowboylogo">Cowboy Club
             </a>
           </div>
 
