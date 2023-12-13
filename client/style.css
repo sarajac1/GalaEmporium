@@ -800,7 +800,7 @@ input#password {
 }
 
 .cc-image-item {
-  width: 48%;
+  width: calc(50% - 5px);
 }
 
 .cc-single-column {
