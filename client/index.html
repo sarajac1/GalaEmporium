@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
   <title>Gala Emporium</title>
   <script src="jquery-3.7.1.js"></script>
@@ -20,6 +20,8 @@
 <body>
   <div id="container">
     <header>
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="menu-toggle">
       <nav>
         <a href="#">Home</a>
         <a href="#magicshowclub">Magic Show Club</a>
@@ -45,6 +47,19 @@
     <aside id="events"></aside> -->
 
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.querySelectorAll('nav a');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.checked = false; // Закрыть бургерное меню
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

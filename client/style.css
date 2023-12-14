@@ -189,6 +189,66 @@ li {
 }
 
 
+/* Существующие стили */
+
+/* Скрытие чекбокса */
+#menu-toggle {
+  display: none;
+}
+
+/* Стили для иконки меню */
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  height: 0px;
+}
+
+/* Media query для меньших экранов (мобильные устройства) */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    width: 100%;
+      /* Размер иконки */
+      /* Высота линий */
+    background-color: black;
+      /* Цвет линий */
+    position: relative;    cursor: pointer;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+    /* Скрыть ссылки навигации по умолчанию на меньших экранах */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+  }
+
+  nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Используем метку для отображения ссылок навигации */
+  #menu-toggle:checked~nav {
+    display: flex;
+    /* Отображение ссылок навигации, когда checkbox отмечен */
+  }
+
+  .fas.fa-bars::before{
+    color: white;
+  }
+}
+
+
 
 
 /*Vampire Club*/
